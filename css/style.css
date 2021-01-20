@@ -1,0 +1,52 @@
+.day{
+    width: 100px;
+    height: 150px;
+    border: solid 1px;
+}
+
+.check{
+    position: absolute;
+    width: 30px;
+    height: 150px;
+    border: solid 1px;
+}
+
+#f1{
+    left: 109px;
+    top: 8px;
+}
+
+#f1b{
+    width: 28px;
+    height: 20px;
+}
+
+#f2{
+    left: 140px;
+    top: 8px;
+}
+
+#f3{
+    left: 171px;
+    top: 8px;
+}
+
+#f4{
+    left: 202px;
+    top: 8px;
+}
+
+#f5{
+    left: 233px;
+    top: 8px;
+}
+
+#f6{
+    left: 264px;
+    top: 8px;
+}
+
+#f7{
+    left: 295px;
+    top: 8px;
+}
