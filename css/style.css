@@ -1,9 +1,10 @@
+/*デイリー入力欄*/
 .day{
     width: 100px;
     height: 150px;
     border: solid 1px;
 }
-
+/*確認欄のサイズ指定*/
 .check{
     position: absolute;
     width: 30px;
@@ -11,42 +12,47 @@
     border: solid 1px;
 }
 
+/*first*/
+#ft{
+    width: 93px;
+}
+
 #f1{
     left: 109px;
     top: 8px;
 }
 
-#f1b{
+#fcb{
     width: 28px;
     height: 20px;
 }
 
-#f2{
-    left: 140px;
-    top: 8px;
+/*second*/
+#st{
+    width: 93px;
 }
 
-#f3{
-    left: 171px;
-    top: 8px;
+#s1{
+    left: 109px;
+    top: 160px;
 }
 
-#f4{
-    left: 202px;
-    top: 8px;
+#scb{
+    width: 28px;
+    height: 20px;
 }
 
-#f5{
-    left: 233px;
-    top: 8px;
+/*third*/
+#tt{
+    width: 93px;
 }
 
-#f6{
-    left: 264px;
-    top: 8px;
+#t1{
+    left: 109px;
+    top: 312px;
 }
 
-#f7{
-    left: 295px;
-    top: 8px;
+#tcb{
+    width: 28px;
+    height: 20px;
 }
