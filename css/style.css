@@ -1,58 +1,99 @@
 /*デイリー入力欄*/
 .day{
-    width: 100px;
-    height: 150px;
+    position: absolute;
+    width: 150px;
+    height: 60px;
     border: solid 1px;
 }
 /*確認欄のサイズ指定*/
 .check{
     position: absolute;
-    width: 30px;
-    height: 150px;
+    width: 200px;
+    height: 60px;
     border: solid 1px;
+    left: 159px;
+}
+
+/*テキスト入力欄*/
+.add{
+    position: absolute;
 }
 
 /*first*/
+
+
+/*追加テキスト first*/
 #ft{
-    width: 93px;
+    width: 200px;
 }
 
+/*テキスト入力　first*/
+#add_1{
+    top: 70px;
+}
+
+/*確認欄*/
 #f1{
-    left: 109px;
     top: 8px;
 }
 
+/*完了　ボタン*/
 #fcb{
     width: 28px;
     height: 20px;
 }
 
 /*second*/
+#second{
+    top: 130px;
+}
+
+/*テキスト入力　second*/
+#add_2{
+    top: 191px;
+}
+
+/*追加テキスト　second*/
 #st{
-    width: 93px;
+    width: 200px;
 }
 
+/*追加ボタン*/
+
+/*確認欄*/
 #s1{
-    left: 109px;
-    top: 160px;
+    top: 130px;
 }
 
+/*完了　ボタン*/
 #scb{
     width: 28px;
     height: 20px;
 }
 
 /*third*/
+#third{
+    top: 250px;
+}
+
+/*テキスト入力 third*/
+#add_3{
+    top: 311px;
+}
+
+/*追加テキスト third*/
 #tt{
-    width: 93px;
+    width: 200px;
 }
 
+/*確認欄*/
 #t1{
-    left: 109px;
-    top: 312px;
+    top: 250px;
 }
 
+/*完了　ボタン*/
 #tcb{
     width: 28px;
     height: 20px;
 }
+
