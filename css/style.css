@@ -10,16 +10,26 @@
 /*確認欄のサイズ指定*/
 .check{
     position: absolute;
-    width: 200px;
+    width: 210px;
     height: 60px;
     border: solid 1px;
     left: 159px;
 }
 
-.f_checker{
-    display: inline-block;
+/*入力欄 all*/
+.add{
+    position: absolute;
+    left: 4px;
 }
 
+.first_checker{
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    border: solid 1px;
+}
+
+/*それぞれのchecker入れたら消す*/
 .done{
     position: relative;
     left: 10%;
@@ -30,12 +40,11 @@
     border: solid black 1px;
 }
 
-/*テキスト入力欄*/
-.add{
-    position: absolute;
-}
 
 /*first*/
+#first{
+    left: 4px;
+}
 
 /*追加テキスト first*/
 #ft{
@@ -47,9 +56,40 @@
     top: 70px;
 }
 
-/*確認欄*/
-#f1{
-    top: 8px;
+/*確認欄 first*/
+
+#first_c1{
+    left: 155px;
+}
+
+#first_c2{
+    left: 186px;
+}
+
+#first_c3{
+    left: 217px;
+}
+
+#first_c4{
+    left: 248px;
+}
+
+#first_c5{
+    left: 279px;
+}
+
+#first_c6{
+    left: 310px;
+}
+
+#first_c7{
+    left: 341px;
+}
+
+/*確認欄ボタン first*/
+.f_checker{
+    width: 30px;
+    height: 20px;
 }
 
 /*完了　ボタン*/

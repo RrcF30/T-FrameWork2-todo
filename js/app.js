@@ -1,7 +1,7 @@
 // 一つ目の欄を取得
 let first = document.getElementById("first");
-let f_check = document.getElementById("f_l");
-let f1b = document.getElementById("fcb");
+let f_check = document.getElementById("fl1");
+let f1b = document.getElementsByClassName("fcb1");
 
 //一つ目の入力欄
 let in_text1 = document.getElementById("ft");
