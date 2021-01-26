@@ -1,7 +1,21 @@
 // 一つ目の欄を取得
 let first = document.getElementById("first");
-let f_check = document.getElementById("fl1");
-let f1b = document.getElementsByClassName("fcb1");
+// fl(number)取得
+let fl1 = document.getElementById("fl1");
+let fl2 = document.getElementById("fl2");
+let fl3 = document.getElementById("fl3");
+let fl4 = document.getElementById("fl4");
+let fl5 = document.getElementById("fl5");
+let fl6 = document.getElementById("fl6");
+let fl7 = document.getElementById("fl7");
+// 確認欄用ボタン (first)
+let f1b = document.getElementById("fcb1");
+let f2b = document.getElementById("fcb2");
+let f3b = document.getElementById("fcb3");
+let f4b = document.getElementById("fcb4");
+let f5b = document.getElementById("fcb5");
+let f6b = document.getElementById("fcb6");
+let f7b = document.getElementById("fcb7");
 
 //一つ目の入力欄
 let in_text1 = document.getElementById("ft");
@@ -28,7 +42,14 @@ let add_btn3 = document.getElementById("b_3");
 // 要素を非表示(first)
 in_text1.style.display = "none";
 add_btn1.style.display = "none";
-f_check.style.display = "none";
+// fl(number)を非表示
+fl1.style.display = "none";
+fl2.style.display = "none";
+fl3.style.display = "none";
+fl4.style.display = "none";
+fl5.style.display = "none";
+fl6.style.display = "none";
+fl7.style.display = "none";
 
 // 要素を非表示(second)
 in_text2.style.display = "none";
@@ -56,9 +77,33 @@ add_btn1.onclick = function(){
     add_btn1.style.display = "none";
 }
 
-// f_checkクリック時の動作
+// f(number)bクリック時の動作
 f1b.onclick = function(){
-    f_check.style.display = "block";
+    fl1.style.display = "block";
+}
+
+f2b.onclick = function(){
+    fl2.style.display = "block";
+}
+
+f3b.onclick = function(){
+    fl3.style.display = "block";
+}
+
+f4b.onclick = function(){
+    fl4.style.display = "block";
+}
+
+f5b.onclick = function(){
+    fl5.style.display = "block";
+}
+
+f6b.onclick = function(){
+    fl6.style.display = "block";
+}
+
+f7b.onclick = function(){
+    fl7.style.display = "block";
 }
 
 // numberをクリックした時の処理(second)
@@ -67,7 +112,7 @@ second.onclick = function(){
     add_btn2.style.display = "block";
 }
 
-// add_btnクリック時の動作(scond)
+// add_btnクリック時の動作(second)
 add_btn2.onclick = function(){
     let add_text2 = in_text2.value;
     second.innerHTML = "";

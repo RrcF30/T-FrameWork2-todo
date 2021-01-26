@@ -16,6 +16,12 @@
     left: 159px;
 }
 
+/*確認欄ボタン first*/
+.f_checker{
+    width: 30px;
+    height: 20px;
+}
+
 /*入力欄 all*/
 .add{
     position: absolute;
@@ -29,7 +35,7 @@
     border: solid 1px;
 }
 
-/*それぞれのchecker入れたら消す*/
+/*それぞれのchecker入れたら消す　残り(second third)*/
 .done{
     position: relative;
     left: 10%;
@@ -53,10 +59,21 @@
 
 /*テキスト入力　first*/
 #add_1{
-    top: 70px;
+    top: 72px;
 }
 
 /*確認欄 first*/
+
+.first_list{
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    width: 19px;
+    height: 19px;
+    border: solid 1px;
+    border-radius: 50%;
+    text-align: center;
+}
 
 #first_c1{
     left: 155px;
@@ -84,12 +101,6 @@
 
 #first_c7{
     left: 341px;
-}
-
-/*確認欄ボタン first*/
-.f_checker{
-    width: 30px;
-    height: 20px;
 }
 
 /*完了　ボタン*/
