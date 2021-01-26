@@ -35,6 +35,13 @@
     border: solid 1px;
 }
 
+.second_checker{
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    border: solid 1px;
+}
+
 /*それぞれのchecker入れたら消す　残り(second third)*/
 .done{
     position: relative;
@@ -103,14 +110,10 @@
     left: 341px;
 }
 
-/*完了　ボタン*/
-#fcb{
-    width: 28px;
-    height: 20px;
-}
-
 /*second*/
 #second{
+    position: absolute;
+    left: 4px;
     top: 130px;
 }
 
@@ -127,13 +130,56 @@
 /*追加ボタン*/
 
 /*確認欄*/
-#s1{
+.second_checker{
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    border: solid 1px;
     top: 130px;
 }
 
+.second_list{
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    width: 19px;
+    height: 19px;
+    border: solid 1px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#second_c1{
+    left: 155px;
+}
+
+#second_c2{
+    left: 186px;
+}
+
+#second_c3{
+    left: 217px;
+}
+
+#second_c4{
+    left: 248px;
+}
+
+#second_c5{
+    left: 279px;
+}
+
+#second_c6{
+    left: 310px;
+}
+
+#second_c7{
+    left: 341px;
+}
+
 /*完了　ボタン*/
-#scb{
-    width: 28px;
+.s_checker{
+    width: 30px;
     height: 20px;
 }
 
