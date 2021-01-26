@@ -1,3 +1,5 @@
+// all get    all get       all get          all get          all get             all get               all get       all get
+
 // 一つ目の欄を取得
 let first = document.getElementById("first");
 // fl(number)取得
@@ -103,6 +105,8 @@ tl5.style.display = "none";
 tl6.style.display = "none";
 tl7.style.display = "none";
 
+//         first            first               first                    first               first              first
+
 //numberをクリックした時の処理(first)
 first.onclick = function(){
     in_text1.style.display = "block";
@@ -121,31 +125,59 @@ add_btn1.onclick = function(){
 
 // f(number)bクリック時の動作
 f1b.onclick = function(){
-    fl1.style.display = "block";
+    if(fl1.style.display==''){
+        fl1.style.display='none';
+    }else{
+        fl1.style.display='';
+    }
 }
 
 f2b.onclick = function(){
-    fl2.style.display = "block";
+    if(fl2.style.display==''){
+        fl2.style.display='none';
+    }else{
+        fl2.style.display='';
+    }
 }
 
 f3b.onclick = function(){
-    fl3.style.display = "block";
+    if(fl3.style.display==''){
+        fl3.style.display='none';
+      }else{
+        fl3.style.display='';
+    }
 }
 
 f4b.onclick = function(){
-    fl4.style.display = "block";
+    if(fl4.style.display==''){
+        fl4.style.display='none';
+      }else{
+        fl4.style.display='';
+    }
 }
 
 f5b.onclick = function(){
-    fl5.style.display = "block";
+    if(fl5.style.display==''){
+        fl5.style.display='none';
+      }else{
+        fl5.style.display='';
+    }
 }
 
 f6b.onclick = function(){
-    fl6.style.display = "block";
+    if(fl6.style.display==''){
+        fl6.style.display='none';
+      }else{
+        fl6.style.display='';
+    }
 }
 
 f7b.onclick = function(){
-    fl7.style.display = "block";
+    if(fl7.style.display==''){
+        fl7.style.display='none';
+      }else{
+        fl7.style.display='';
+    }
 }
 
 //  ここからsecond            ここからsecond      ここからsecond                ここからsecond             ここからsecond          ここからsecond       ここからsecond
@@ -168,32 +200,62 @@ add_btn2.onclick = function(){
 
 // s_checkクリック時の動作
 s1b.onclick = function(){
-    sl1.style.display = "block";
+    if(sl1.style.display==''){
+        sl1.style.display='none';
+      }else{
+        sl1.style.display='';
+    }
 }
 
 s2b.onclick = function(){
-    sl2.style.display = "block";
+    if(sl2.style.display==''){
+        sl2.style.display='none';
+      }else{
+        sl2.style.display='';
+    }
 }
 
 s3b.onclick = function(){
-    sl3.style.display = "block";
+    if(sl3.style.display==''){
+        sl3.style.display='none';
+      }else{
+        sl3.style.display='';
+    }
 }
 
 s4b.onclick = function(){
-    sl4.style.display = "block";
+    if(sl4.style.display==''){
+        sl4.style.display='none';
+      }else{
+        sl4.style.display='';
+    }
 }
 
 s5b.onclick = function(){
-    sl5.style.display= "block";
+    if(sl5.style.display==''){
+        sl5.style.display='none';
+      }else{
+        sl5.style.display='';
+    }
 }
 
 s6b.onclick = function(){
-    sl6.style.display = "block";
+    if(sl6.style.display==''){
+        sl6.style.display='none';
+      }else{
+        sl6.style.display='';
+    }
 }
 
 s7b.onclick = function(){
-    sl7.style.display = "block";
+    if(sl7.style.display==''){
+        sl7.style.display='none';
+    }else{
+        sl7.style.display='';
+    }
 }
+
+// third            third                     third           third          third            third              third        third           third
 
 // numberをクリックした時の処理(third)
 third.onclick = function(){
@@ -213,29 +275,57 @@ add_btn3.onclick = function(){
 
 // t_checkクリック時の動作
 t1b.onclick = function(){
-    tl1.style.display = "block";
+    if(tl1.style.display==''){
+        tl1.style.display='none';
+      }else{
+        tl1.style.display='';
+    }
 }
 
 t2b.onclick = function(){
-    tl2.style.display = "block";
+    if(tl2.style.display==''){
+        tl2.style.display='none';
+      }else{
+        tl2.style.display='';
+    }
 }
 
 t3b.onclick = function(){
-    tl3.style.display = "block";
+    if(tl3.style.display==''){
+        tl3.style.display='none';
+      }else{
+        tl3.style.display='';
+    }
 }
 
 t4b.onclick = function(){
-    tl4.style.display = "block";
+    if(tl4.style.display==''){
+        tl4.style.display='none';
+      }else{
+        tl4.style.display='';
+    }
 }
 
 t5b.onclick = function(){
-    tl5.style.display = "block";
+    if(tl5.style.display==''){
+        tl5.style.display='none';
+      }else{
+        tl5.style.display='';
+    }
 }
 
 t6b.onclick = function(){
-    tl6.style.display = "block";
+    if(tl6.style.display==''){
+        tl6.style.display='none';
+      }else{
+        tl6.style.display='';
+    }
 }
 
 t7b.onclick = function(){
-    tl7.style.display = "block";
+    if(tl7.style.display==''){
+        tl7.style.display='none';
+      }else{
+        tl7.style.display='';
+    }
 }

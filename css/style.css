@@ -108,7 +108,7 @@
 
 /*テキスト入力　second*/
 #add_2{
-    top: 191px;
+    top: 194px;
 }
 
 /*追加テキスト　second*/
@@ -180,7 +180,8 @@
 
 /*テキスト入力 third*/
 #add_3{
-    top: 311px;
+    position: absolute;
+    top: 314px;
 }
 
 /*追加テキスト third*/
