@@ -46,8 +46,22 @@ let add_btn2 = document.getElementById("b_2");
 
 // 三つ目の欄を取得
 let third = document.getElementById("third");
-let t_check = document.getElementById("t_l");
-let t1b = document.getElementById("tcb");
+// tl(number)　取得
+let tl1 = document.getElementById("tl1");
+let tl2 = document.getElementById("tl2");
+let tl3 = document.getElementById("tl3");
+let tl4 = document.getElementById("tl4");
+let tl5 = document.getElementById("tl5");
+let tl6 = document.getElementById("tl6");
+let tl7 = document.getElementById("tl7");
+//tc(number)b 取得
+let t1b = document.getElementById("tcb1");
+let t2b = document.getElementById("tcb2");
+let t3b = document.getElementById("tcb3");
+let t4b = document.getElementById("tcb4");
+let t5b = document.getElementById("tcb5");
+let t6b = document.getElementById("tcb6");
+let t7b = document.getElementById("tcb7");
 
 // 三つ目の入力欄
 let in_text3 = document.getElementById("tt");
@@ -80,7 +94,14 @@ sl7.style.display = "none";
 //要素を非表示
 in_text3.style.display = "none";
 add_btn3.style.display = "none";
-t_check.style.display = "none";
+// tl(number)
+tl1.style.display = "none";
+tl2.style.display = "none";
+tl3.style.display = "none";
+tl4.style.display = "none";
+tl5.style.display = "none";
+tl6.style.display = "none";
+tl7.style.display = "none";
 
 //numberをクリックした時の処理(first)
 first.onclick = function(){
@@ -127,7 +148,7 @@ f7b.onclick = function(){
     fl7.style.display = "block";
 }
 
-//                    ここからsecond      ここからsecond
+//  ここからsecond            ここからsecond      ここからsecond                ここからsecond             ここからsecond          ここからsecond       ここからsecond
 
 // numberをクリックした時の処理(second)
 second.onclick = function(){
@@ -192,5 +213,29 @@ add_btn3.onclick = function(){
 
 // t_checkクリック時の動作
 t1b.onclick = function(){
-    t_check.style.display = "block";
+    tl1.style.display = "block";
+}
+
+t2b.onclick = function(){
+    tl2.style.display = "block";
+}
+
+t3b.onclick = function(){
+    tl3.style.display = "block";
+}
+
+t4b.onclick = function(){
+    tl4.style.display = "block";
+}
+
+t5b.onclick = function(){
+    tl5.style.display = "block";
+}
+
+t6b.onclick = function(){
+    tl6.style.display = "block";
+}
+
+t7b.onclick = function(){
+    tl7.style.display = "block";
 }
