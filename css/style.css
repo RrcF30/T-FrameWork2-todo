@@ -16,11 +16,6 @@
     left: 159px;
 }
 
-/*確認欄ボタン first*/
-.f_checker{
-    width: 30px;
-    height: 20px;
-}
 
 /*入力欄 all*/
 .add{
@@ -28,24 +23,25 @@
     left: 4px;
 }
 
+
+/*first*/
+#first_day{
+    position: absolute;
+    bottom: 570px;
+    left: 4px;
+}
+
+/*確認欄ボタン first*/
+.f_checker{
+    width: 30px;
+    height: 20px;
+}
 .first_checker{
     position: absolute;
     width: 30px;
     height: 60px;
     border: solid 1px;
-}
-
-.second_checker{
-    position: absolute;
-    width: 30px;
-    height: 60px;
-    border: solid 1px;
-}
-
-
-/*first*/
-#first{
-    left: 4px;
+    left: 0px;
 }
 
 /*追加テキスト first*/
@@ -55,7 +51,9 @@
 
 /*テキスト入力　first*/
 #add_1{
-    top: 72px;
+    position: absolute;
+    top: 63px;
+    left: 0px;
 }
 
 /*確認欄 first*/
@@ -71,44 +69,45 @@
 }
 
 #first_c1{
-    left: 155px;
+    left: 151px;
 }
 
 #first_c2{
-    left: 186px;
+    left: 182px;
 }
 
 #first_c3{
-    left: 217px;
+    left: 213px;
 }
 
 #first_c4{
-    left: 248px;
+    left: 244px;
 }
 
 #first_c5{
-    left: 279px;
+    left: 275px;
 }
 
 #first_c6{
-    left: 310px;
+    left: 306px;
 }
 
 #first_c7{
-    left: 341px;
+    left: 337px;
 }
 
 /*second                 second                    second               second             second                 second        second      */
-
-#second{
+#second_day{
     position: absolute;
+    bottom: 440px;
     left: 4px;
-    top: 130px;
 }
 
 /*テキスト入力　second*/
 #add_2{
-    top: 194px;
+    position: absolute;
+    top: 63px;
+    left: 0px;
 }
 
 /*追加テキスト　second*/
@@ -119,16 +118,16 @@
 /*追加ボタン*/
 
 /*確認欄*/
+
 .second_checker{
     position: absolute;
     width: 30px;
     height: 60px;
     border: solid 1px;
-    top: 130px;
+    left: 4px;
 }
 
 .second_list{
-    position: absolute;
     left: 5px;
     top: 30px;
     width: 19px;
@@ -138,31 +137,31 @@
 }
 
 #second_c1{
-    left: 155px;
+    left: 151px;
 }
 
 #second_c2{
-    left: 186px;
+    left: 182px;
 }
 
 #second_c3{
-    left: 217px;
+    left: 213px;
 }
 
 #second_c4{
-    left: 248px;
+    left: 244px;
 }
 
 #second_c5{
-    left: 279px;
+    left: 275px;
 }
 
 #second_c6{
-    left: 310px;
+    left: 306px;
 }
 
 #second_c7{
-    left: 341px;
+    left: 337px;
 }
 
 /*完了　ボタン*/
@@ -172,16 +171,17 @@
 }
 
 /*third               third               third                   third                third                    third               third             third  */
-#third{
+#third_day{
     position: absolute;
+    bottom: 310px;
     left: 4px;
-    top: 250px;
 }
 
 /*テキスト入力 third*/
 #add_3{
     position: absolute;
-    top: 314px;
+    top: 63px;
+    left:0px;
 }
 
 /*追加テキスト third*/
@@ -195,35 +195,34 @@
     width: 30px;
     height: 60px;
     border: solid 1px;
-    top: 250px;
 }
 
 #third_c1{
-    left: 155px;
+    left: 151px;
 }
 
 #third_c2{
-    left: 186px;
+    left: 182px;
 }
 
 #third_c3{
-    left: 217px;
+    left: 213px;
 }
 
 #third_c4{
-    left: 248px;
+    left: 244px;
 }
 
 #third_c5{
-    left: 279px;
+    left: 275px;
 }
 
 #third_c6{
-    left: 310px;
+    left: 306px;
 }
 
 #third_c7{
-    left: 341px;
+    left: 337px;
 }
 
 /*完了　ボタン*/
