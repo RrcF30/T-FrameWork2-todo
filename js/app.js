@@ -1,3 +1,16 @@
+// 日付表示
+// 日付データを取得
+let date = new  Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+//日付を表示するHTMLの要素を取得
+let v_date_t = document.getElementById("viewdate_text");
+//HTMLに表示するテキストを作成
+let day_text = day + "日";
+let month_text = month + "月";
+// HTMLで要素を表示
+v_date_t.innerHTML += month_text + day_text;
+
 // all get    all get       all get          all get          all get             all get               all get       all get
 
 // 一つ目の欄を取得

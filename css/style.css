@@ -1,3 +1,21 @@
+/*view month & date*/
+#viewdate{
+    position: absolute;
+    left: 35px;
+    top: 10px;
+    width: 305px;
+    height: 70px;
+    border: solid 1px;
+}
+
+#viewdate_text{
+    position: absolute;
+    font-size: 40px;
+    left: 98px;
+}
+
+/*todo           todo           todo*/
+
 /*デイリー入力欄*/
 .day{
     position: absolute;
