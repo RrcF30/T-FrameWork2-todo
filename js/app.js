@@ -69,6 +69,28 @@ let t7b = document.getElementById("tcb7");
 let in_text3 = document.getElementById("tt");
 let add_btn3 = document.getElementById("b_3");
 
+// 4つ目の欄を取得
+let four = document.getElementById("four");
+// fol(number)を取得
+let fol1 = document.getElementById("fol1");
+let fol2 = document.getElementById("fol2");
+let fol3 = document.getElementById("fol3");
+let fol4 = document.getElementById("fol4");
+let fol5 = document.getElementById("fol5");
+let fol6 = document.getElementById("fol6");
+let fol7 = document.getElementById("fol7");
+// fob(number)を取得
+let fob1 = document.getElementById("focb1");
+let fob2 = document.getElementById("focb2");
+let fob3 = document.getElementById("focb3");
+let fob4 = document.getElementById("focb4");
+let fob5 = document.getElementById("focb5");
+let fob6 = document.getElementById("focb6");
+let fob7 = document.getElementById("focb7");
+// 4つ目の入力欄
+let in_text4 = document.getElementById("fot");
+let add_btn4 = document.getElementById("b_4");
+
 // テキスト入力欄を非表示(first)
 in_text1.style.display = "none";
 add_btn1.style.display = "none";
@@ -93,10 +115,10 @@ sl5.style.display = "none";
 sl6.style.display = "none";
 sl7.style.display = "none";
 
-//要素を非表示
+//要素を非表示 third
 in_text3.style.display = "none";
 add_btn3.style.display = "none";
-// tl(number)
+// tl(number) 非表示
 tl1.style.display = "none";
 tl2.style.display = "none";
 tl3.style.display = "none";
@@ -104,6 +126,18 @@ tl4.style.display = "none";
 tl5.style.display = "none";
 tl6.style.display = "none";
 tl7.style.display = "none";
+
+//要素を非表示(four)
+in_text4.style.display = "none";
+add_btn4.style.display = "none";
+// fol(number) 非表示
+fol1.style.display = "none";
+fol2.style.display = "none";
+fol3.style.display = "none";
+fol4.style.display = "none";
+fol5.style.display = "none";
+fol6.style.display = "none";
+fol7.style.display = "none";
 
 //         first            first               first                    first               first              first
 
@@ -327,5 +361,79 @@ t7b.onclick = function(){
         tl7.style.display='none';
       }else{
         tl7.style.display='';
+    }
+}
+
+// four                  four                       four                    four                  four                four           four
+// numberをクリックした時の処理(four)
+four.onclick = function(){
+    in_text4.style.display = "block";
+    add_btn4.style.display = "block";
+}
+
+// add_btnクリック時の動作(third)
+add_btn4.onclick = function(){
+    let add_text4 = in_text4.value;
+    four.innerHTML = "";
+    four.innerHTML += add_text4;
+    in_text4.value = "";
+    in_text4.style.display = "none";
+    add_btn4.style.display = "none";
+}
+
+// t_checkクリック時の動作
+fob1.onclick = function(){
+    if(fol1.style.display==''){
+        fol1.style.display='none';
+      }else{
+        fol1.style.display='';
+    }
+}
+
+fob2.onclick = function(){
+    if(fol2.style.display==''){
+        fol2.style.display='none';
+      }else{
+        fol2.style.display='';
+    }
+}
+
+fob3.onclick = function(){
+    if(fol3.style.display==''){
+        fol3.style.display='none';
+      }else{
+        fol3.style.display='';
+    }
+}
+
+fob4.onclick = function(){
+    if(fol4.style.display==''){
+        fol4.style.display='none';
+      }else{
+        fol4.style.display='';
+    }
+}
+
+fob5.onclick = function(){
+    if(fol5.style.display==''){
+        fol5.style.display='none';
+      }else{
+        fol5.style.display='';
+    }
+}
+
+fob6.onclick = function(){
+    if(fol6.style.display==''){
+        fol6.style.display='none';
+      }else{
+        fol6.style.display='';
+    }
+}
+
+fob7.onclick = function(){
+    if(fol7.style.display==''){
+        fol7.style.display='none';
+      }else{
+        fol7.style.display='';
     }
 }

@@ -17,12 +17,6 @@
 }
 
 
-/*入力欄 all*/
-.add{
-    position: absolute;
-    left: 4px;
-}
-
 
 /*first*/
 #first_day{
@@ -170,6 +164,17 @@
     height: 20px;
 }
 
+/*second checker*/
+.second_list{
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    width: 19px;
+    height: 19px;
+    border: solid 1px;
+    border-radius: 50%;
+}
+
 /*third               third               third                   third                third                    third               third             third  */
 #third_day{
     position: absolute;
@@ -233,6 +238,96 @@
 
 /*third checker*/
 .third_list{
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    width: 19px;
+    height: 19px;
+    border: solid 1px;
+    border-radius: 50%;
+}
+
+/*four              four            four         four               four              four             four                 four                  four*/
+#four_day{
+    position: absolute;
+    bottom: 180px;
+    left: 4px;
+}
+
+/*テキスト入力　second*/
+#four_2{
+    position: absolute;
+    top: 63px;
+    left: 0px;
+}
+
+/*追加テキスト　second*/
+#fot{
+    width: 200px;
+}
+
+/*追加ボタン*/
+
+#add_4{
+    position: absolute;
+    top: 61px;
+}
+
+/*確認欄*/
+
+.four_checker{
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    border: solid 1px;
+    left: 4px;
+}
+
+.four_list{
+    left: 5px;
+    top: 30px;
+    width: 19px;
+    height: 19px;
+    border: solid 1px;
+    border-radius: 50%;
+}
+
+#four_c1{
+    left: 151px;
+}
+
+#four_c2{
+    left: 182px;
+}
+
+#four_c3{
+    left: 213px;
+}
+
+#four_c4{
+    left: 244px;
+}
+
+#four_c5{
+    left: 275px;
+}
+
+#four_c6{
+    left: 306px;
+}
+
+#four_c7{
+    left: 337px;
+}
+
+/*完了　ボタン*/
+.fo_checker{
+    width: 30px;
+    height: 20px;
+}
+
+/*four checker*/
+.four_list{
     position: absolute;
     left: 5px;
     top: 30px;
