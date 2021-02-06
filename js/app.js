@@ -17,8 +17,8 @@ let e_week_month;
 e_week_month = [];
 let e_week_day;
 e_week_day= [];
-let s_criteria = new Date("2021/1/24/12:00");
-let e_criteria = new Date("2021/1/30/12:00");
+let s_criteria = new Date("2021/1/24/12:00:00");
+let e_criteria = new Date("2021/1/30/12:00:00");
 let addDate = 7;
 let fore = s_criteria.getFullYear();
 for (var i = 1; i <= fore; i++) {
