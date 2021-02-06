@@ -43,6 +43,9 @@ let month_text = month + "月";
 v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
 week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
 week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
+if(e_week_day == undefined){
+    console.log("undefind");
+}
 // all get    all get       all get          all get          all get             all get               all get       all get
 
 // 一つ目の欄を取得
