@@ -2,15 +2,43 @@
 // 日付データを取得
 let date = new  Date();
 let day = date.getDate();
+let daystr = ["日","月","火","水","木","金","土"][day];
 let month = date.getMonth() + 1;
+
+//週間更新
+let week_number = 0;
+
+// 一週間取得
+let s_week_month = [];
+let s_week_day = [];
+let e_week_month = [];
+let e_week_day = [];
+let s_criteria = new Date("2021/1/24/12:00");
+let e_criteria = new Date("2021/1/30/12:00");
+let addDate = 7;
+let fore = s_criteria.getFullYear();
+for (var i = 1; i <= fore; i++) {
+    // 週初め
+    s_criteria.setDate(s_criteria.getDate() + addDate);
+    s_week_month.push(s_criteria.getMonth() + 1);
+    s_week_day.push(s_criteria.getDate());
+    //　週終わり
+    e_criteria.setDate(e_criteria.getDate() + addDate);
+    e_week_month.push(e_criteria.getMonth() + 1);
+    e_week_day.push(e_criteria.getDate());
+}
 //日付を表示するHTMLの要素を取得
 let v_date_t = document.getElementById("viewdate_text");
+let week_start = document.getElementById("week_start");
+let from = document.getElementById("from");
+let week_end = document.getElementById("week_end");
 //HTMLに表示するテキストを作成
 let day_text = day + "日";
 let month_text = month + "月";
 // HTMLで要素を表示
-v_date_t.innerHTML += month_text + day_text;
-
+v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
+week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
+week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
 // all get    all get       all get          all get          all get             all get               all get       all get
 
 // 一つ目の欄を取得

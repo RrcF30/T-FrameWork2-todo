@@ -1,17 +1,48 @@
 /*view month & date*/
 #viewdate{
     position: absolute;
-    left: 35px;
+    left: 10px;
     top: 10px;
-    width: 305px;
+    width: 3px;
     height: 70px;
-    border: solid 1px;
 }
 
 #viewdate_text{
     position: absolute;
-    font-size: 40px;
-    left: 98px;
+    width: 200px;
+    top: 8px;
+    font-size: 38px;
+}
+
+/*week_start and week_end*/
+#week_week{
+    position: absolute;
+    width: 160px;
+    left: 201px;
+    height: 70px;
+}
+
+#week_start{
+    position: absolute;
+    left: 1px;
+    height: 20px;
+    width: 65px;
+}
+
+#from{
+    position: absolute;
+    height: 20px;
+    top: 24px;
+    width: 30px;
+    left: 65px;
+}
+
+#week_end{
+    position: absolute;
+    bottom: 0px;
+    height: 20px;
+    width: 65px;
+    left: 95px;
 }
 
 /*todo           todo           todo*/
