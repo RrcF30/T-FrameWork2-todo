@@ -1,16 +1,11 @@
 // 日付表示
 // 日付データを取得
 let date = new  Date();
-let day = date.getDate();
+let today = date.getDate();
+let day = date.getDay();
 let allday = ["日","月","火","水","木","金","土"];
-let daystr = addDate[day];
+let daystr = allday[day];
 let month = date.getMonth() + 1;
-if(day == undefined){
-    console.log("this");
-}
-else{
-    console.log("not this");
-}
 
 //週間更新
 let week_number = 0;
@@ -38,21 +33,23 @@ for (var i = 1; i <= fore; i++) {
     e_week_month.push(e_criteria.getMonth() + 1);
     e_week_day.push(e_criteria.getDate());
 }
+//　日曜日にだけ行う処理
+if(day == 0){
+    week_number += 1;
+}
+
 //日付を表示するHTMLの要素を取得
 let v_date_t = document.getElementById("viewdate_text");
 let week_start = document.getElementById("week_start");
 let from = document.getElementById("from");
 let week_end = document.getElementById("week_end");
 //HTMLに表示するテキストを作成
-let day_text = day + "日";
+let day_text = today + "日";
 let month_text = month + "月";
 // HTMLで要素を表示
 v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
 week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
 week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
-if(e_week_day == undefined){
-    console.log("undefind");
-}
 // all get    all get       all get          all get          all get             all get               all get       all get
 
 // 一つ目の欄を取得
