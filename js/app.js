@@ -2,7 +2,8 @@
 // 日付データを取得
 let date = new  Date();
 let day = date.getDate();
-let daystr = ["日","月","火","水","木","金","土"][day];
+let allday = ["日","月","火","水","木","金","土"];
+let daystr = addDate[day];
 let month = date.getMonth() + 1;
 
 //週間更新
