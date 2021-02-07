@@ -5,6 +5,12 @@ let day = date.getDate();
 let allday = ["日","月","火","水","木","金","土"];
 let daystr = addDate[day];
 let month = date.getMonth() + 1;
+if(day == undefined){
+    console.log("this");
+}
+else{
+    console.log("not this");
+}
 
 //週間更新
 let week_number = 0;
