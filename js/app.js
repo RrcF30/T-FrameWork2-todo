@@ -217,6 +217,7 @@ f1b.onclick = function(){
     }else{
         fl1.style.display='';
     }
+    localStorage.setItem("fl1",fl1.style.display);
 }
 
 f2b.onclick = function(){
@@ -225,6 +226,7 @@ f2b.onclick = function(){
     }else{
         fl2.style.display='';
     }
+    localStorage.setItem("fl2",fl2.style.display);
 }
 
 f3b.onclick = function(){
@@ -233,6 +235,7 @@ f3b.onclick = function(){
     }else{
         fl3.style.display='';
     }
+    localStorage.setItem("fl3",fl3.style.display);
 }
 
 f4b.onclick = function(){
@@ -241,6 +244,7 @@ f4b.onclick = function(){
     }else{
         fl4.style.display='';
     }
+    localStorage.setItem("fl4",fl4.style.display);
 }
 
 f5b.onclick = function(){
@@ -249,6 +253,7 @@ f5b.onclick = function(){
     }else{
         fl5.style.display='';
     }
+    localStorage.setItem("fl5",fl5.style.display);
 }
 
 f6b.onclick = function(){
@@ -257,6 +262,7 @@ f6b.onclick = function(){
     }else{
         fl6.style.display='';
     }
+    localStorage.setItem("fl6",fl6.style.display);
 }
 
 f7b.onclick = function(){
@@ -265,6 +271,7 @@ f7b.onclick = function(){
     }else{
         fl7.style.display='';
     }
+    localStorage.setItem("fl7",fl7.style.display);
 }
 
 //  ここからsecond            ここからsecond      ここからsecond                ここからsecond             ここからsecond          ここからsecond       ここからsecond
@@ -294,6 +301,7 @@ s1b.onclick = function(){
     }else{
         sl1.style.display='';
     }
+    localStorage.setItem("sl1",sl1.style.display);
 }
 
 s2b.onclick = function(){
@@ -302,6 +310,7 @@ s2b.onclick = function(){
     }else{
         sl2.style.display='';
     }
+    localStorage.setItem("sl2",sl2.style.display);
 }
 
 s3b.onclick = function(){
@@ -310,6 +319,7 @@ s3b.onclick = function(){
     }else{
         sl3.style.display='';
     }
+    localStorage.setItem("sl3",sl3.style.display);
 }
 
 s4b.onclick = function(){
@@ -318,6 +328,7 @@ s4b.onclick = function(){
     }else{
         sl4.style.display='';
     }
+    localStorage.setItem("sl4",sl4.style.display);
 }
 
 s5b.onclick = function(){
@@ -326,6 +337,7 @@ s5b.onclick = function(){
     }else{
         sl5.style.display='';
     }
+    localStorage.setItem("sl5",sl5.style.display);
 }
 
 s6b.onclick = function(){
@@ -334,6 +346,7 @@ s6b.onclick = function(){
     }else{
         sl6.style.display='';
     }
+    localStorage.setItem("sl6",sl6.style.display);
 }
 
 s7b.onclick = function(){
@@ -342,6 +355,7 @@ s7b.onclick = function(){
     }else{
         sl7.style.display='';
     }
+    localStorage.setItem("sl7",sl7.style.display);
 }
 
 // third            third                     third           third          third            third              third        third           third
@@ -371,6 +385,7 @@ t1b.onclick = function(){
     }else{
         tl1.style.display='';
     }
+    localStorage.setItem("tl1",tl1.style.display);
 }
 
 t2b.onclick = function(){
@@ -379,6 +394,7 @@ t2b.onclick = function(){
     }else{
         tl2.style.display='';
     }
+    localStorage.setItem("tl2",tl2.style.display);
 }
 
 t3b.onclick = function(){
@@ -387,6 +403,7 @@ t3b.onclick = function(){
     }else{
         tl3.style.display='';
     }
+    localStorage.setItem("tl3",tl3.style.display);
 }
 
 t4b.onclick = function(){
@@ -395,6 +412,7 @@ t4b.onclick = function(){
     }else{
         tl4.style.display='';
     }
+    localStorage.setItem("tl4",tl4.style.display);
 }
 
 t5b.onclick = function(){
@@ -403,6 +421,7 @@ t5b.onclick = function(){
     }else{
         tl5.style.display='';
     }
+    localStorage.setItem("tl5",tl5.style.display);
 }
 
 t6b.onclick = function(){
@@ -411,6 +430,7 @@ t6b.onclick = function(){
     }else{
         tl6.style.display='';
     }
+    localStorage.setItem("tl6",tl6.style.display);
 }
 
 t7b.onclick = function(){
@@ -419,6 +439,7 @@ t7b.onclick = function(){
     }else{
         tl7.style.display='';
     }
+    localStorage.setItem("tl7",tl7.style.display);
 }
 
 // four                  four                       four                    four                  four                four           four
@@ -496,16 +517,107 @@ fob7.onclick = function(){
     }
 }
 
+// fl_count 
+let fl1_count = 0;
+localStorage.setItem("fl1_count",fl1);
+
+let fl2_count = 0;
+localStorage.setItem("fl2_count",fl2);
+
+let fl3_count = 0;
+localStorage.setItem("fl3_count",fl3);
+
+let fl4_count = 0;
+localStorage.setItem("fl4_count",fl4);
+
+let fl5_count = 0;
+localStorage.setItem("fl5_count",fl5);
+
+let fl6_count = 0;
+localStorage.setItem("fl6_count",fl6);
+
+let fl7_count = 0;
+localStorage.setItem("fl7_count",fl7);
+
+// sl_count 
+let sl1_count = 0;
+localStorage.setItem("sl1_count",sl1);
+
+let sl2_count = 0;
+localStorage.setItem("sl2_count",sl2);
+
+let sl3_count = 0;
+localStorage.setItem("sl3_count",sl3);
+
+let sl4_count = 0;
+localStorage.setItem("sl4_count",sl4);
+
+let sl5_count = 0;
+localStorage.setItem("sl5_count",sl5);
+
+let fl6_count = 0;
+localStorage.setItem("sl6_count",sl6);
+
+let sl7_count = 0;
+localStorage.setItem("sl7_count",fl7);
+
+
 // window.onload
 window.onload = function(){
     // first
     add_text1 = localStorage.getItem("first-task");
     if(add_text1 == null){
         first.innerHTML += "";
+        fl1_count++;
     }   
     else{
         first.innerHTML += add_text1;
     }
+    // fl_check
+    fl1.style.display = localStorage.getItem("fl1");
+    if(fl1_count == 0){
+        fl1.style.display = "none";
+    }
+    fl1_count = localStorage.getItem("fl1_count");
+
+    fl2.style.display = localStorage.getItem("fl2");
+    if(fl2_count == 0){
+        fl2.style.display = "none";
+        fl2_count++;
+    }
+
+    fl3.style.display = localStorage.getItem("fl3");
+    if(fl3_count == 0){
+        fl3.style.display = "none";
+        fl3_count++;
+    }
+
+    fl4.style.display = localStorage.getItem("fl4");
+    if(fl4_count == 0){
+        fl4.style.display = "none";
+        fl4_count++;
+    }
+
+    fl5.style.display = localStorage.getItem("fl5");
+    if(fl5_count == 0){
+        fl5.style.display = "none";
+        fl5_count++;
+    }
+    
+
+    fl6.style.display = localStorage.getItem("fl6");
+    if(fl6_count == 0){
+        fl6.style.display = "none";
+        fl6_count++;
+    }
+    
+    fl7.style.display = localStorage.getItem("fl7");
+    if(fl7_count == 0){
+        fl7.style.display = "none";
+        fl7_count++;
+    }
+
+
     //second
     add_text2 = localStorage.getItem("second-task");
     if(add_text2 == null){
@@ -514,6 +626,57 @@ window.onload = function(){
     else{
         second.innerHTML += add_text2;
     }
+
+    // sl_check
+    sl1.style.display = localStorage.getItem("sl1");
+    let sl1_count = 0;
+    if(sl1_count == 0){
+        sl1.style.display = "none";
+        sl1_count++;
+    }
+
+    sl2.style.display = localStorage.getItem("sl2");
+    let sl2_count = 0;
+    if(sl2_count == 0){
+        sl2.style.display = "none";
+        sl2_count++;
+    }
+
+    sl3.style.display = localStorage.getItem("sl3");
+    let sl3_count = 0;
+    if(sl3_count == 0){
+        sl3.style.display = "none";
+        sl3_count++;
+    }
+
+    sl4.style.display = localStorage.getItem("sl4");
+    let sl4_count = 0;
+    if(sl4_count == 0){
+        sl4.style.display = "none";
+        sl4_count++;
+    }
+
+    sl5.style.display = localStorage.getItem("sl5");
+    let sl5_count = 0;
+    if(sl5_count == 0){
+        sl5.style.display = "none";
+        sl5_count++;
+    }
+
+    sl6.style.display = localStorage.getItem("sl6");
+    let sl6_count = 0;
+    if(sl6_count == 0){
+        sl6.style.display = "none";
+        sl6_count++;
+    }
+
+    sl7.style.display = localStorage.getItem("sl7");
+    let sl7_count = 0;
+    if(sl7_count == 0){
+        sl7.style.display = "none";
+        sl7_count++;
+    }
+
     //third
     add_text3 = localStorage.getItem("third-task");
     if(add_text3 == null){
@@ -522,6 +685,56 @@ window.onload = function(){
     else{
         third.innerHTML += add_text3;
     }
+    // tl_check
+    tl1.style.display = localStorage.getItem("tl1");
+    let tl1_count = 0;
+    if(tl1_count == 0){
+        tl1.style.display = "none";
+    }
+    tl1_count++;
+
+    tl2.style.display = localStorage.getItem("tl2");
+    let tl2_count = 0;
+    if(tl2_count == 0){
+        tl2.style.display = "none";
+    }
+    tl2_count++;
+
+    tl3.style.display = localStorage.getItem("tl3");
+    let tl3_count = 0;
+    if(tl3_count == 0){
+        tl3.style.display = "none";
+    }
+    tl3_count++;
+
+    tl4.style.display = localStorage.getItem("tl4");
+    let tl4_count = 0;
+    if(tl4_count == 0){
+        tl4.style.display = "none";
+    }
+    tl4_count++;
+
+    tl5.style.display = localStorage.getItem("tl5");
+    let tl5_count = 0;
+    if(tl5_count == 0){
+        tl5.style.display = "none";
+    }
+    tl5_count++;
+
+    tl6.style.display = localStorage.getItem("tl6");
+    let tl6_count = 0;
+    if(tl6_count == 0){
+        tl6.style.display = "none";
+    }
+    tl6_count++;
+
+    tl7.style.display = localStorage.getItem("tl7");
+    let tl7_count = 0;
+    if(tl7_count == 0){
+        tl7.style.display = "none";
+    }
+    tl7_count++;
+    console.log(tl7_count);
     //four
     add_text4 = localStorage.getItem("fourth-task");
     if(add_text4 == null){
@@ -530,4 +743,5 @@ window.onload = function(){
     else{
         four.innerHTML += add_text4
     }
+
 }
