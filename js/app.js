@@ -489,3 +489,5 @@ fob7.onclick = function(){
         fol7.style.display='';
     }
 }
+localStorage.setItem("first",add_text1);
+localStorage.getItem("first");
