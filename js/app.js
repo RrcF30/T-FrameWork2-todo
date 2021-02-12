@@ -203,10 +203,11 @@ first.onclick = function(){
 add_btn1.onclick = function(){
     let add_text1 = in_text1.value;
     first.innerHTML = "";
-    first.innerHTML += add_text1;
     in_text1.value = "";
     in_text1.style.display = "none";
     add_btn1.style.display = "none";
+    localStorage.setItem("first-task",add_text1);
+    first.innerHTML += add_text1;
 }
 
 // f(number)bクリック時の動作
@@ -229,7 +230,7 @@ f2b.onclick = function(){
 f3b.onclick = function(){
     if(fl3.style.display==''){
         fl3.style.display='none';
-      }else{
+    }else{
         fl3.style.display='';
     }
 }
@@ -237,7 +238,7 @@ f3b.onclick = function(){
 f4b.onclick = function(){
     if(fl4.style.display==''){
         fl4.style.display='none';
-      }else{
+    }else{
         fl4.style.display='';
     }
 }
@@ -245,7 +246,7 @@ f4b.onclick = function(){
 f5b.onclick = function(){
     if(fl5.style.display==''){
         fl5.style.display='none';
-      }else{
+    }else{
         fl5.style.display='';
     }
 }
@@ -253,7 +254,7 @@ f5b.onclick = function(){
 f6b.onclick = function(){
     if(fl6.style.display==''){
         fl6.style.display='none';
-      }else{
+    }else{
         fl6.style.display='';
     }
 }
@@ -261,12 +262,13 @@ f6b.onclick = function(){
 f7b.onclick = function(){
     if(fl7.style.display==''){
         fl7.style.display='none';
-      }else{
+    }else{
         fl7.style.display='';
     }
 }
 
 //  ここからsecond            ここからsecond      ここからsecond                ここからsecond             ここからsecond          ここからsecond       ここからsecond
+
 
 // numberをクリックした時の処理(second)
 second.onclick = function(){
@@ -278,17 +280,18 @@ second.onclick = function(){
 add_btn2.onclick = function(){
     let add_text2 = in_text2.value;
     second.innerHTML = "";
-    second.innerHTML += add_text2;
     in_text2.value = "";
     in_text2.style.display = "none";
     add_btn2.style.display = "none";
+    localStorage.setItem("second-task",add_text2);
+    second.innerHTML += add_text2;
 }
 
 // s_checkクリック時の動作
 s1b.onclick = function(){
     if(sl1.style.display==''){
         sl1.style.display='none';
-      }else{
+    }else{
         sl1.style.display='';
     }
 }
@@ -296,7 +299,7 @@ s1b.onclick = function(){
 s2b.onclick = function(){
     if(sl2.style.display==''){
         sl2.style.display='none';
-      }else{
+    }else{
         sl2.style.display='';
     }
 }
@@ -304,7 +307,7 @@ s2b.onclick = function(){
 s3b.onclick = function(){
     if(sl3.style.display==''){
         sl3.style.display='none';
-      }else{
+    }else{
         sl3.style.display='';
     }
 }
@@ -312,7 +315,7 @@ s3b.onclick = function(){
 s4b.onclick = function(){
     if(sl4.style.display==''){
         sl4.style.display='none';
-      }else{
+    }else{
         sl4.style.display='';
     }
 }
@@ -320,7 +323,7 @@ s4b.onclick = function(){
 s5b.onclick = function(){
     if(sl5.style.display==''){
         sl5.style.display='none';
-      }else{
+    }else{
         sl5.style.display='';
     }
 }
@@ -328,7 +331,7 @@ s5b.onclick = function(){
 s6b.onclick = function(){
     if(sl6.style.display==''){
         sl6.style.display='none';
-      }else{
+    }else{
         sl6.style.display='';
     }
 }
@@ -357,13 +360,15 @@ add_btn3.onclick = function(){
     in_text3.value = "";
     in_text3.style.display = "none";
     add_btn3.style.display = "none";
+    add_btn3.style.display = "none";
+    localStorage.setItem("third-task",add_text3);
 }
 
 // t_checkクリック時の動作
 t1b.onclick = function(){
     if(tl1.style.display==''){
         tl1.style.display='none';
-      }else{
+    }else{
         tl1.style.display='';
     }
 }
@@ -371,7 +376,7 @@ t1b.onclick = function(){
 t2b.onclick = function(){
     if(tl2.style.display==''){
         tl2.style.display='none';
-      }else{
+    }else{
         tl2.style.display='';
     }
 }
@@ -379,7 +384,7 @@ t2b.onclick = function(){
 t3b.onclick = function(){
     if(tl3.style.display==''){
         tl3.style.display='none';
-      }else{
+    }else{
         tl3.style.display='';
     }
 }
@@ -387,7 +392,7 @@ t3b.onclick = function(){
 t4b.onclick = function(){
     if(tl4.style.display==''){
         tl4.style.display='none';
-      }else{
+    }else{
         tl4.style.display='';
     }
 }
@@ -395,7 +400,7 @@ t4b.onclick = function(){
 t5b.onclick = function(){
     if(tl5.style.display==''){
         tl5.style.display='none';
-      }else{
+    }else{
         tl5.style.display='';
     }
 }
@@ -403,7 +408,7 @@ t5b.onclick = function(){
 t6b.onclick = function(){
     if(tl6.style.display==''){
         tl6.style.display='none';
-      }else{
+    }else{
         tl6.style.display='';
     }
 }
@@ -411,7 +416,7 @@ t6b.onclick = function(){
 t7b.onclick = function(){
     if(tl7.style.display==''){
         tl7.style.display='none';
-      }else{
+    }else{
         tl7.style.display='';
     }
 }
@@ -431,13 +436,14 @@ add_btn4.onclick = function(){
     in_text4.value = "";
     in_text4.style.display = "none";
     add_btn4.style.display = "none";
+    localStorage.setItem("fourth-task",add_text4);
 }
 
 // t_checkクリック時の動作
 fob1.onclick = function(){
     if(fol1.style.display==''){
         fol1.style.display='none';
-      }else{
+    }else{
         fol1.style.display='';
     }
 }
@@ -445,7 +451,7 @@ fob1.onclick = function(){
 fob2.onclick = function(){
     if(fol2.style.display==''){
         fol2.style.display='none';
-      }else{
+    }else{
         fol2.style.display='';
     }
 }
@@ -453,7 +459,7 @@ fob2.onclick = function(){
 fob3.onclick = function(){
     if(fol3.style.display==''){
         fol3.style.display='none';
-      }else{
+    }else{
         fol3.style.display='';
     }
 }
@@ -461,7 +467,7 @@ fob3.onclick = function(){
 fob4.onclick = function(){
     if(fol4.style.display==''){
         fol4.style.display='none';
-      }else{
+    }else{
         fol4.style.display='';
     }
 }
@@ -469,7 +475,7 @@ fob4.onclick = function(){
 fob5.onclick = function(){
     if(fol5.style.display==''){
         fol5.style.display='none';
-      }else{
+    }else{
         fol5.style.display='';
     }
 }
@@ -477,7 +483,7 @@ fob5.onclick = function(){
 fob6.onclick = function(){
     if(fol6.style.display==''){
         fol6.style.display='none';
-      }else{
+    }else{
         fol6.style.display='';
     }
 }
@@ -485,9 +491,43 @@ fob6.onclick = function(){
 fob7.onclick = function(){
     if(fol7.style.display==''){
         fol7.style.display='none';
-      }else{
+    }else{
         fol7.style.display='';
     }
 }
-localStorage.setItem("first",add_text1);
-localStorage.getItem("first");
+
+// window.onload
+window.onload = function(){
+    // first
+    add_text1 = localStorage.getItem("first-task");
+    if(add_text1 == null){
+        first.innerHTML += "";
+    }   
+    else{
+        first.innerHTML += add_text1;
+    }
+    //second
+    add_text2 = localStorage.getItem("second-task");
+    if(add_text2 == null){
+        second.innerHTML += "";
+    }
+    else{
+        second.innerHTML += add_text2;
+    }
+    //third
+    add_text3 = localStorage.getItem("third-task");
+    if(add_text3 == null){
+        third.innerHTML += "";
+    }
+    else{
+        third.innerHTML += add_text3;
+    }
+    //four
+    add_text4 = localStorage.getItem("fourth-task");
+    if(add_text4 == null){
+        four.innerHTML += "";
+    }
+    else{
+        four.innerHTML += add_text4
+    }
+}
