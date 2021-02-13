@@ -858,4 +858,16 @@ window.onload = function(){
         fl7.style.display = "none";
         fl7_count++;
     }
+    
+    // first-visit
+    const keyName = 'visited';
+    const keyValue = true;
+    
+    if(!localStorage.getItem(keyName)){
+        //localStorageにキーと値を追加
+        localStorage.setItem(keyName, keyValue);
+        //ここに初回アクセス時の処理
+        let all_task = document.getElementsByClassName("all-task");
+        all_task.style.display = "none";
+    }
 }
