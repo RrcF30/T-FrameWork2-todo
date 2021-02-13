@@ -460,13 +460,15 @@ add_btn4.onclick = function(){
     localStorage.setItem("fourth-task",add_text4);
 }
 
-// t_checkクリック時の動作
+// fo_checkクリック時の動作
 fob1.onclick = function(){
     if(fol1.style.display==''){
         fol1.style.display='none';
     }else{
         fol1.style.display='';
     }
+
+    localStorage.setItem("fol1",fol1.style.display);
 }
 
 fob2.onclick = function(){
@@ -475,6 +477,7 @@ fob2.onclick = function(){
     }else{
         fol2.style.display='';
     }
+    localStorage.setItem("fol2",fol2.style.display);
 }
 
 fob3.onclick = function(){
@@ -483,6 +486,7 @@ fob3.onclick = function(){
     }else{
         fol3.style.display='';
     }
+    localStorage.setItem("fol3",fol3.style.display);
 }
 
 fob4.onclick = function(){
@@ -491,6 +495,7 @@ fob4.onclick = function(){
     }else{
         fol4.style.display='';
     }
+    localStorage.setItem("fol4",fol4.style.display);
 }
 
 fob5.onclick = function(){
@@ -499,6 +504,7 @@ fob5.onclick = function(){
     }else{
         fol5.style.display='';
     }
+    localStorage.setItem("fol5",fol5.style.display);
 }
 
 fob6.onclick = function(){
@@ -507,6 +513,7 @@ fob6.onclick = function(){
     }else{
         fol6.style.display='';
     }
+    localStorage.setItem("fol6",fol6.style.display);
 }
 
 fob7.onclick = function(){
@@ -515,6 +522,7 @@ fob7.onclick = function(){
     }else{
         fol7.style.display='';
     }
+    localStorage.setItem("fol7",fol7.style.display);
 }
 
 // fl_count 
@@ -555,11 +563,56 @@ localStorage.setItem("sl4_count",sl4);
 let sl5_count = 0;
 localStorage.setItem("sl5_count",sl5);
 
-let fl6_count = 0;
+let sl6_count = 0;
 localStorage.setItem("sl6_count",sl6);
 
 let sl7_count = 0;
 localStorage.setItem("sl7_count",fl7);
+
+// tl_count 
+let tl1_count = 0;
+localStorage.setItem("tl1_count",tl1);
+
+let tl2_count = 0;
+localStorage.setItem("tl2_count",tl2);
+
+let tl3_count = 0;
+localStorage.setItem("tl3_count",tl3);
+
+let tl4_count = 0;
+localStorage.setItem("tl4_count",tl4);
+
+let tl5_count = 0;
+localStorage.setItem("tl5_count",tl5);
+
+let tl6_count = 0;
+localStorage.setItem("tl6_count",tl6);
+
+let tl7_count = 0;
+localStorage.setItem("tl7_count",tl7);
+
+// fol_count 
+let fol1_count = 0;
+localStorage.setItem("fol1_count",fol1);
+
+let fol2_count = 0;
+localStorage.setItem("fol2_count",fol2);
+
+let fol3_count = 0;
+localStorage.setItem("fol3_count",fol3);
+
+let fol4_count = 0;
+localStorage.setItem("fol4_count",fol4);
+
+let fol5_count = 0;
+localStorage.setItem("fol5_count",fol5);
+
+let fol6_count = 0;
+localStorage.setItem("fol6_count",fol6);
+
+let fol7_count = 0;
+localStorage.setItem("fol7_count",fol7);
+
 
 
 // window.onload
@@ -575,30 +628,34 @@ window.onload = function(){
     }
     // fl_check
     fl1.style.display = localStorage.getItem("fl1");
+    fl1_count = localStorage.getItem("fl1_count");
     if(fl1_count == 0){
         fl1.style.display = "none";
     }
-    fl1_count = localStorage.getItem("fl1_count");
 
     fl2.style.display = localStorage.getItem("fl2");
+    fl2_count = localStorage.getItem("fl2_count");
     if(fl2_count == 0){
         fl2.style.display = "none";
         fl2_count++;
     }
 
     fl3.style.display = localStorage.getItem("fl3");
+    fl3_count = localStorage.getItem("fl3_count");
     if(fl3_count == 0){
         fl3.style.display = "none";
         fl3_count++;
     }
 
     fl4.style.display = localStorage.getItem("fl4");
+    fl4_count = localStorage.getItem("fl4_count");
     if(fl4_count == 0){
         fl4.style.display = "none";
         fl4_count++;
     }
 
     fl5.style.display = localStorage.getItem("fl5");
+    fl5_count = localStorage.getItem("fl5_count");
     if(fl5_count == 0){
         fl5.style.display = "none";
         fl5_count++;
@@ -606,17 +663,18 @@ window.onload = function(){
     
 
     fl6.style.display = localStorage.getItem("fl6");
+    fl6_count = localStorage.getItem("fl6_count");
     if(fl6_count == 0){
         fl6.style.display = "none";
         fl6_count++;
     }
     
     fl7.style.display = localStorage.getItem("fl7");
+    fl7_count = localStorage.getItem("fl7_count");
     if(fl7_count == 0){
         fl7.style.display = "none";
         fl7_count++;
     }
-
 
     //second
     add_text2 = localStorage.getItem("second-task");
@@ -629,49 +687,49 @@ window.onload = function(){
 
     // sl_check
     sl1.style.display = localStorage.getItem("sl1");
-    let sl1_count = 0;
+    sl1_count = localStorage.getItem("sl1_count");
     if(sl1_count == 0){
         sl1.style.display = "none";
         sl1_count++;
     }
 
     sl2.style.display = localStorage.getItem("sl2");
-    let sl2_count = 0;
+    sl2_count = localStorage.getItem("sl2_count");
     if(sl2_count == 0){
         sl2.style.display = "none";
         sl2_count++;
     }
 
     sl3.style.display = localStorage.getItem("sl3");
-    let sl3_count = 0;
+    sl3_count = localStorage.getItem("sl3_count");
     if(sl3_count == 0){
         sl3.style.display = "none";
         sl3_count++;
     }
 
     sl4.style.display = localStorage.getItem("sl4");
-    let sl4_count = 0;
+    sl4_count = localStorage.getItem("sl4_count");
     if(sl4_count == 0){
         sl4.style.display = "none";
         sl4_count++;
     }
 
     sl5.style.display = localStorage.getItem("sl5");
-    let sl5_count = 0;
+    sl5_count = localStorage.getItem("sl5_count");
     if(sl5_count == 0){
         sl5.style.display = "none";
         sl5_count++;
     }
 
     sl6.style.display = localStorage.getItem("sl6");
-    let sl6_count = 0;
+    sl6_count = localStorage.getItem("sl6_count");
     if(sl6_count == 0){
         sl6.style.display = "none";
         sl6_count++;
     }
 
     sl7.style.display = localStorage.getItem("sl7");
-    let sl7_count = 0;
+    sl7_count = localStorage.getItem("sl7_count");
     if(sl7_count == 0){
         sl7.style.display = "none";
         sl7_count++;
@@ -685,56 +743,56 @@ window.onload = function(){
     else{
         third.innerHTML += add_text3;
     }
-    // tl_check
+
+    // tl_count
     tl1.style.display = localStorage.getItem("tl1");
-    let tl1_count = 0;
+    tl1_count = localStorage.getItem("tl1_count");
     if(tl1_count == 0){
         tl1.style.display = "none";
+        tl1_count++;
     }
-    tl1_count++;
 
     tl2.style.display = localStorage.getItem("tl2");
-    let tl2_count = 0;
+    tl2_count = localStorage.getItem("tl2_count");
     if(tl2_count == 0){
         tl2.style.display = "none";
     }
     tl2_count++;
 
     tl3.style.display = localStorage.getItem("tl3");
-    let tl3_count = 0;
+    tl3_count = localStorage.getItem("tl3_count");
     if(tl3_count == 0){
         tl3.style.display = "none";
     }
     tl3_count++;
 
     tl4.style.display = localStorage.getItem("tl4");
-    let tl4_count = 0;
+    tl4_count = localStorage.getItem("tl4_count");
     if(tl4_count == 0){
         tl4.style.display = "none";
     }
     tl4_count++;
 
     tl5.style.display = localStorage.getItem("tl5");
-    let tl5_count = 0;
+    tl5_count = localStorage.getItem("tl5_count");
     if(tl5_count == 0){
         tl5.style.display = "none";
     }
     tl5_count++;
 
     tl6.style.display = localStorage.getItem("tl6");
-    let tl6_count = 0;
+    tl6_count = localStorage.getItem("tl6_count");
     if(tl6_count == 0){
         tl6.style.display = "none";
     }
     tl6_count++;
 
     tl7.style.display = localStorage.getItem("tl7");
-    let tl7_count = 0;
+    tl7_count = localStorage.getItem("tl7_count");
     if(tl7_count == 0){
         tl7.style.display = "none";
     }
     tl7_count++;
-    console.log(tl7_count);
     //four
     add_text4 = localStorage.getItem("fourth-task");
     if(add_text4 == null){
@@ -744,4 +802,60 @@ window.onload = function(){
         four.innerHTML += add_text4
     }
 
+    // fol_count
+    fol1.style.display = localStorage.getItem("fol1");
+    fol1_count = localStorage.getItem("fol1_count");
+    if(fol1_count == 0){
+        fol1.style.display = "none";
+        fol1_count++;
+    }
+
+    fol2.style.display = localStorage.getItem("fol2");
+    fol2_count = localStorage.getItem("fol2_count");
+    if(fol2_count == 0){
+        tl2.style.display = "none";
+    }
+    fol2_count++;
+
+    fol3.style.display = localStorage.getItem("fol3");
+    fol3_count = localStorage.getItem("fol3_count");
+    if(fol3_count == 0){
+        fol3.style.display = "none";
+    }
+    fol3_count++;
+
+    fol4.style.display = localStorage.getItem("fol4");
+    fol4_count = localStorage.getItem("fol4_count");
+    if(fol4_count == 0){
+        fol4.style.display = "none";
+    }
+    fol4_count++;
+
+    fol5.style.display = localStorage.getItem("fol5");
+    fol5_count = localStorage.getItem("fol5_count");
+    if(fol5_count == 0){
+        fol5.style.display = "none";
+    }
+    fol5_count++;
+
+    fol6.style.display = localStorage.getItem("fol6");
+    fol6_count = localStorage.getItem("fol6_count");
+    if(fol6_count == 0){
+        fol6.style.display = "none";
+    }
+    fol6_count++;
+
+    fol7.style.display = localStorage.getItem("fol7");
+    fol7_count = localStorage.getItem("fol7_count");
+    if(fol7_count == 0){
+        fol7.style.display = "none";
+    }
+    fol7_count++;
+    
+    fl7.style.display = localStorage.getItem("fl7");
+    fl7_count = localStorage.getItem("fl7_count");
+    if(fl7_count == 0){
+        fl7.style.display = "none";
+        fl7_count++;
+    }
 }
