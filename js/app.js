@@ -867,10 +867,7 @@ window.onload = function(){
         //localStorageにキーと値を追加
         localStorage.setItem(keyName, keyValue);
         //ここに初回アクセス時の処理
-        let body = document.getElementById("body");
-        let all_task = body.getElementsByClassName("all-task");
-        for(let i = 0;i <all_task.length;i++){
-            all_task[i].style.display = "none";
-        }
+        let all_task = document.getElementsByClassName("all-task");
+        console.log(all_task.length);
     }
 }
