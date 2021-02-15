@@ -23,7 +23,7 @@ let s_criteria = new Date("2021/02/7 12:00:00");
 let e_criteria = new Date("2021/02/13 12:00:00");
 let addDate = 7;
 let fore = s_criteria.getFullYear();
-console.log(day);
+
 for (var i = 1; i <= fore; i++) {
     // 週初め
     s_criteria.setDate(s_criteria.getDate() + addDate);
@@ -621,6 +621,12 @@ function display_none(a,b){
     a.style.display = b;
 }
 
+// ２回目以降　関数
+const style_name_second = "block";
+function display_block(c,d){
+    c.style.display = d;
+}
+
 // window.onload
 window.onload = function(){
     
@@ -678,7 +684,11 @@ window.onload = function(){
         }
         // fl_check
         fl1.style.display = localStorage.getItem("fl1");
-    
+        if(fl1.style.display == "block"){
+            console.log("block");
+        } else{
+            console.log("none");
+        }
         fl2.style.display = localStorage.getItem("fl2");
     
         fl3.style.display = localStorage.getItem("fl3");
