@@ -869,6 +869,7 @@ window.onload = function(){
         localStorage.setItem("all-task",all_body);
         localStorage.getItem("all-task");
         alert(all_body.length);
+        all_body.style.display  = "none";
     } else{
         alert("b");
     }
