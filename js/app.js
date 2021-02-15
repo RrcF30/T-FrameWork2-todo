@@ -615,6 +615,12 @@ localStorage.setItem("fol7_count",fol7);
 const keyName = 'visited';
 const keyValue = true;
 
+// 関数用意
+const style_name = "none";
+function display_none(a,b){
+    a.style.display = b;
+}
+
 // window.onload
 window.onload = function(){
     // first
@@ -852,12 +858,7 @@ window.onload = function(){
     }
     fol7_count++;
     
-    fl7.style.display = localStorage.getItem("fl7");
-    fl7_count = localStorage.getItem("fl7_count");
-    if(fl7_count == 0){
-        fl7.style.display = "none";
-        fl7_count++;
-    }
+    
 
     
     if(!localStorage.getItem(keyName)){
@@ -866,8 +867,8 @@ window.onload = function(){
         //ここに初回アクセス時の処理
         let all_body = document.getElementsByClassName("all-task");
         localStorage.setItem("all-task",all_body);
+        display_none(fl1,style_name);
         localStorage.getItem("all-task");
-        all_body.style.display  = "none";
     } else{
         alert("b");
     }
