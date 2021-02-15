@@ -629,10 +629,6 @@ function display_block(c,d){
 
 // window.onload
 window.onload = function(){
-    
-    
-    
-    
     if(!localStorage.getItem(keyName)){
         //localStorageにキーと値を追加
         localStorage.setItem(keyName, keyValue);
@@ -673,6 +669,7 @@ window.onload = function(){
         display_none(fol7,style_name);
         localStorage.getItem("all-task");
     } else{
+        console.log("a")
         // first
         add_text1 = localStorage.getItem("first-task");
         if(add_text1 == null){
