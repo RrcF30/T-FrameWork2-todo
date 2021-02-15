@@ -522,93 +522,6 @@ fob7.onclick = function(){
     localStorage.setItem("fol7",fol7.style.display);
 }
 
-// fl_count 
-let fl1_count = 0;
-localStorage.setItem("fl1_count",fl1);
-
-let fl2_count = 0;
-localStorage.setItem("fl2_count",fl2);
-
-let fl3_count = 0;
-localStorage.setItem("fl3_count",fl3);
-
-let fl4_count = 0;
-localStorage.setItem("fl4_count",fl4);
-
-let fl5_count = 0;
-localStorage.setItem("fl5_count",fl5);
-
-let fl6_count = 0;
-localStorage.setItem("fl6_count",fl6);
-
-let fl7_count = 0;
-localStorage.setItem("fl7_count",fl7);
-
-// sl_count 
-let sl1_count = 0;
-localStorage.setItem("sl1_count",sl1);
-
-let sl2_count = 0;
-localStorage.setItem("sl2_count",sl2);
-
-let sl3_count = 0;
-localStorage.setItem("sl3_count",sl3);
-
-let sl4_count = 0;
-localStorage.setItem("sl4_count",sl4);
-
-let sl5_count = 0;
-localStorage.setItem("sl5_count",sl5);
-
-let sl6_count = 0;
-localStorage.setItem("sl6_count",sl6);
-
-let sl7_count = 0;
-localStorage.setItem("sl7_count",fl7);
-
-// tl_count 
-let tl1_count = 0;
-localStorage.setItem("tl1_count",tl1);
-
-let tl2_count = 0;
-localStorage.setItem("tl2_count",tl2);
-
-let tl3_count = 0;
-localStorage.setItem("tl3_count",tl3);
-
-let tl4_count = 0;
-localStorage.setItem("tl4_count",tl4);
-
-let tl5_count = 0;
-localStorage.setItem("tl5_count",tl5);
-
-let tl6_count = 0;
-localStorage.setItem("tl6_count",tl6);
-
-let tl7_count = 0;
-localStorage.setItem("tl7_count",tl7);
-
-// fol_count 
-let fol1_count = 0;
-localStorage.setItem("fol1_count",fol1);
-
-let fol2_count = 0;
-localStorage.setItem("fol2_count",fol2);
-
-let fol3_count = 0;
-localStorage.setItem("fol3_count",fol3);
-
-let fol4_count = 0;
-localStorage.setItem("fol4_count",fol4);
-
-let fol5_count = 0;
-localStorage.setItem("fol5_count",fol5);
-
-let fol6_count = 0;
-localStorage.setItem("fol6_count",fol6);
-
-let fol7_count = 0;
-localStorage.setItem("fol7_count",fol7);
 
 // 初回のみ　宣言
 // first-visit
@@ -668,20 +581,20 @@ window.onload = function(){
         display_none(fol6,style_name);
         display_none(fol7,style_name);
         localStorage.getItem("all-task");
-    } else{
-        console.log("a")
-        // first
-        add_text1 = localStorage.getItem("first-task");
-        if(add_text1 == null){
-            first.innerHTML += "";
-            fl1_count++;
-        }   
-        else{
-            first.innerHTML += add_text1;
-        }
-        // fl_check
-        fl1.style.display = localStorage.getItem("fl1");
-        if(fl1.style.display == "block"){
+    } 
+    console.log("a")
+    // first
+    add_text1 = localStorage.getItem("first-task");
+    if(add_text1 == null){
+        first.innerHTML += "";
+        fl1_count++;
+    }   
+    else{
+        first.innerHTML += add_text1;
+    }
+    // fl_check
+    fl1.style.display = localStorage.getItem("fl1");
+    if(fl1.style.display == "block"){
             console.log("block");
         } else{
             console.log("none");
@@ -779,5 +692,4 @@ window.onload = function(){
     v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
     week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
     week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
-}
 
