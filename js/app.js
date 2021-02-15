@@ -898,7 +898,7 @@ window.onload = function(){
         display_none(fol4,style_name);
         display_none(fol5,style_name);
         display_none(fol6,style_name);
-        display_none(foll7,style_name);
+        display_none(fol7,style_name);
         localStorage.getItem("all-task");
     } else{
         alert("b");
