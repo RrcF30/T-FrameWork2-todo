@@ -866,6 +866,8 @@ window.onload = function(){
         //ここに初回アクセス時の処理
         let all_body = [];
         all_body.push(document.getElementsByClassName("all-task"));
+        localStorage.setItem("all-task",all_body);
+        localStorage.getItem("all-task");
         alert("a");
     } else{
         alert("b");
