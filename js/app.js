@@ -587,13 +587,13 @@ window.onload = function(){
     add_text1 = localStorage.getItem("first-task");
     if(add_text1 == null){
         first.innerHTML += "";
-        fl1_count++;
     }   
     else{
         first.innerHTML += add_text1;
     }
     // fl_check
     fl1.style.display = localStorage.getItem("fl1");
+    console.log(fl1);
 
     fl2.style.display = localStorage.getItem("fl2");
     
