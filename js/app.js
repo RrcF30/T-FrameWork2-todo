@@ -592,8 +592,8 @@ window.onload = function(){
         first.innerHTML += add_text1;
     }
     // fl_check
-    fl1.style.display = localStorage.getItem("fl1");
-    console.log(fl1);
+    fl1 = localStorage.getItem("fl1");
+    display_block(fl1,style_name_second);
 
     fl2.style.display = localStorage.getItem("fl2");
     
