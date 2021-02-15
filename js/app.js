@@ -594,95 +594,91 @@ window.onload = function(){
     }
     // fl_check
     fl1.style.display = localStorage.getItem("fl1");
-    if(fl1.style.display == "block"){
-            console.log("block");
-        } else{
-            console.log("none");
-        }
-        fl2.style.display = localStorage.getItem("fl2");
+
+    fl2.style.display = localStorage.getItem("fl2");
     
-        fl3.style.display = localStorage.getItem("fl3");
+    fl3.style.display = localStorage.getItem("fl3");
     
-        fl4.style.display = localStorage.getItem("fl4");
+    fl4.style.display = localStorage.getItem("fl4");
         
-        fl5.style.display = localStorage.getItem("fl5");
-        
-        fl6.style.display = localStorage.getItem("fl6");
-        
-        fl7.style.display = localStorage.getItem("fl7");
-        
-        //second
-        add_text2 = localStorage.getItem("second-task");
-        if(add_text2 == null){
-            second.innerHTML += "";
-        }
-        else{
-            second.innerHTML += add_text2;
-        }
+    fl5.style.display = localStorage.getItem("fl5");
     
-        // sl_check
-        sl1.style.display = localStorage.getItem("sl1");
-    
-        sl2.style.display = localStorage.getItem("sl2");
+    fl6.style.display = localStorage.getItem("fl6");
         
-        sl3.style.display = localStorage.getItem("sl3");
+    fl7.style.display = localStorage.getItem("fl7");
         
-        sl4.style.display = localStorage.getItem("sl4");
-        
-        sl5.style.display = localStorage.getItem("sl5");
-        
-        sl6.style.display = localStorage.getItem("sl6");
-        
-        sl7.style.display = localStorage.getItem("sl7");
-        
-        //third
-        add_text3 = localStorage.getItem("third-task");
-        if(add_text3 == null){
-            third.innerHTML += "";
-        }
-        else{
-            third.innerHTML += add_text3;
-        }
-    
-        // tl_count
-        tl1.style.display = localStorage.getItem("tl1");
-        
-        tl2.style.display = localStorage.getItem("tl2");
-        
-        tl3.style.display = localStorage.getItem("tl3");
-        
-        tl4.style.display = localStorage.getItem("tl4");
-        
-        tl5.style.display = localStorage.getItem("tl5");
-        
-        tl6.style.display = localStorage.getItem("tl6");
-        
-        tl7.style.display = localStorage.getItem("tl7");
-        
-        //four
-        add_text4 = localStorage.getItem("fourth-task");
-        if(add_text4 == null){
-            four.innerHTML += "";
-        }
-        else{
-            four.innerHTML += add_text4
-        }
-    
-        // fol_count
-        fol1.style.display = localStorage.getItem("fol1");
-    
-        fol2.style.display = localStorage.getItem("fol2");
-        
-        fol3.style.display = localStorage.getItem("fol3");
-        
-        fol4.style.display = localStorage.getItem("fol4");
-        
-        fol5.style.display = localStorage.getItem("fol5");
-        
-        fol6.style.display = localStorage.getItem("fol6");
-        
-        fol7.style.display = localStorage.getItem("fol7");
+    //second
+    add_text2 = localStorage.getItem("second-task");
+    if(add_text2 == null){
+        second.innerHTML += "";
     }
+    else{
+        second.innerHTML += add_text2;
+    }
+    
+    // sl_check
+    sl1.style.display = localStorage.getItem("sl1");
+    
+    sl2.style.display = localStorage.getItem("sl2");
+        
+    sl3.style.display = localStorage.getItem("sl3");
+        
+    sl4.style.display = localStorage.getItem("sl4");
+        
+    sl5.style.display = localStorage.getItem("sl5");
+        
+    sl6.style.display = localStorage.getItem("sl6");
+        
+    sl7.style.display = localStorage.getItem("sl7");
+        
+    //third
+    add_text3 = localStorage.getItem("third-task");
+    if(add_text3 == null){
+        third.innerHTML += "";
+    }
+    else{
+        third.innerHTML += add_text3;
+    }
+    
+    // tl_count
+    tl1.style.display = localStorage.getItem("tl1");
+    
+    tl2.style.display = localStorage.getItem("tl2");
+        
+    tl3.style.display = localStorage.getItem("tl3");
+        
+    tl4.style.display = localStorage.getItem("tl4");
+        
+    tl5.style.display = localStorage.getItem("tl5");
+        
+    tl6.style.display = localStorage.getItem("tl6");
+        
+    tl7.style.display = localStorage.getItem("tl7");
+        
+    //four
+    add_text4 = localStorage.getItem("fourth-task");
+    if(add_text4 == null){
+        four.innerHTML += "";
+    }
+    else{
+        four.innerHTML += add_text4
+    }
+    
+    // fol_count
+    fol1.style.display = localStorage.getItem("fol1");
+    
+    fol2.style.display = localStorage.getItem("fol2");
+        
+    fol3.style.display = localStorage.getItem("fol3");
+        
+    fol4.style.display = localStorage.getItem("fol4");
+        
+    fol5.style.display = localStorage.getItem("fol5");
+        
+    fol6.style.display = localStorage.getItem("fol6");
+        
+    fol7.style.display = localStorage.getItem("fol7");
+
     // 週間
     // localstrage 設定
     localStorage.setItem("week_number",week_number);
@@ -692,4 +688,4 @@ window.onload = function(){
     v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
     week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
     week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
-
+}
