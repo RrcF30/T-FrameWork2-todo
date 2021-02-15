@@ -868,7 +868,7 @@ window.onload = function(){
         all_body.push(document.getElementsByClassName("all-task"));
         localStorage.setItem("all-task",all_body);
         localStorage.getItem("all-task");
-        alert("a");
+        alert(all_body.length);
     } else{
         alert("b");
     }
