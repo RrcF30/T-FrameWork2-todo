@@ -867,7 +867,38 @@ window.onload = function(){
         //ここに初回アクセス時の処理
         let all_body = document.getElementsByClassName("all-task");
         localStorage.setItem("all-task",all_body);
+        // fl
         display_none(fl1,style_name);
+        display_none(fl2,style_name);
+        display_none(fl3,style_name);
+        display_none(fl4,style_name);
+        display_none(fl5,style_name);
+        display_none(fl6,style_name);
+        display_none(fl7,style_name);
+        //sl
+        display_none(sl1,style_name);
+        display_none(sl2,style_name);
+        display_none(sl3,style_name);
+        display_none(sl4,style_name);
+        display_none(sl5,style_name);
+        display_none(sl6,style_name);
+        display_none(sl7,style_name);
+        // tl
+        display_none(tl1,style_name);
+        display_none(tl2,style_name);
+        display_none(tl3,style_name);
+        display_none(tl4,style_name);
+        display_none(tl5,style_name);
+        display_none(tl6,style_name);
+        display_none(tl7,style_name);
+        //fol
+        display_none(fol1,style_name);
+        display_none(fol2,style_name);
+        display_none(fol3,style_name);
+        display_none(fol4,style_name);
+        display_none(fol5,style_name);
+        display_none(fol6,style_name);
+        display_none(foll7,style_name);
         localStorage.getItem("all-task");
     } else{
         alert("b");
