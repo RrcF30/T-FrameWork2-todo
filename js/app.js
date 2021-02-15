@@ -866,9 +866,9 @@ window.onload = function(){
         //ここに初回アクセス時の処理
         let all_body = [];
         all_body.push(document.getElementsByClassName("all-task"));
-        console.log("a");
+        alert("a");
     } else{
-        console.log("b")
+        alert("b");
     }
 
     // 週間
