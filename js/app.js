@@ -531,8 +531,17 @@ const keyValue = true;
 // 関数用意
 const style_name = "none";
 const style_name_second = "block";
-function display(a,b){
-    a.style.display = b;
+function display(a){
+    a.style.display = "block";
+}
+
+function display_second(b){
+    if(b.style.date == "block"){
+        b.style.display = "block";
+    }
+    else{
+        b.style.display = "none";
+    }
 }
 
 
@@ -599,13 +608,13 @@ window.onload = function(){
         first.innerHTML += add_text1;
     }
     // fl_check
-    display(fl1,fl1_style);
-    display(fl2,fl2_style);
-    display(fl3,fl3_style);
-    display(fl4,fl4_style);
-    display(fl5,fl5_style);
-    display(fl6,fl6_style);
-    display(fl7,fl7_style);
+    display_second(fl1,fl1_style);
+    display_second(fl2,fl2_style);
+    display_second(fl3,fl3_style);
+    display_second(fl4,fl4_style);
+    display_second(fl5,fl5_style);
+    display_second(fl6,fl6_style);
+    display_second(fl7,fl7_style);
 
         
     //second
