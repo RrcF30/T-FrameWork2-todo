@@ -19,10 +19,11 @@ let e_week_month;
 e_week_month = [];
 let e_week_day;
 e_week_day= [];
-let s_criteria = new Date("2021/01/24 12:00:00");
-let e_criteria = new Date("2021/01/30 12:00:00");
+let s_criteria = new Date("2021/02/7 12:00:00");
+let e_criteria = new Date("2021/02/13 12:00:00");
 let addDate = 7;
 let fore = s_criteria.getFullYear();
+console.log(day);
 for (var i = 1; i <= fore; i++) {
     // 週初め
     s_criteria.setDate(s_criteria.getDate() + addDate);
@@ -32,12 +33,11 @@ for (var i = 1; i <= fore; i++) {
     e_criteria.setDate(e_criteria.getDate() + addDate);
     e_week_month.push(e_criteria.getMonth() + 1);
     e_week_day.push(e_criteria.getDate());
-}
-//　日曜日にだけ行う処理
-if(day == 0){
-    week_number += 1;
-}
-
+        //　日曜日にだけ行う処理
+        if(day == 0){
+        week_number += 1;
+        }
+    }
 //日付を表示するHTMLの要素を取得
 let v_date_t = document.getElementById("viewdate_text");
 let week_start = document.getElementById("week_start");
@@ -46,10 +46,7 @@ let week_end = document.getElementById("week_end");
 //HTMLに表示するテキストを作成
 let day_text = today + "日";
 let month_text = month + "月";
-// HTMLで要素を表示
-v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
-week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
-week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
+    
 // all get    all get       all get          all get          all get             all get               all get       all get
 
 // 一つ目の欄を取得
@@ -613,7 +610,10 @@ localStorage.setItem("fol6_count",fol6);
 let fol7_count = 0;
 localStorage.setItem("fol7_count",fol7);
 
-
+// 初回のみ　宣言
+// first-visit
+const keyName = 'visited';
+const keyValue = true;
 
 // window.onload
 window.onload = function(){
@@ -859,15 +859,24 @@ window.onload = function(){
         fl7_count++;
     }
 
-    // first-visit
-    const keyName = 'visited';
-    const keyValue = true;
     
     if(!localStorage.getItem(keyName)){
         //localStorageにキーと値を追加
         localStorage.setItem(keyName, keyValue);
         //ここに初回アクセス時の処理
-        let all_task = document.getElementsByClassName("all-task");
-        console.log(all_task.length);
+        let all_body = [];
+        all_body.push(document.getElementsByClassName("all-task"));
+        console.log(all_body.length);
     }
+
+    // 週間
+    // localstrage 設定
+    localStorage.setItem("week_number",week_number);
+    week_number = localStorage.getItem("week_number");
+
+    // HTMLで要素を表示
+    v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
+    week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
+    week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
 }
+
