@@ -539,6 +539,17 @@ function display(a,b){
 
 // window.onload
 window.onload = function(){
+
+    // localstrage から取得
+    let fl1_style = localStorage.getItem("fl1");
+    let fl2_style = localStorage.getItem("fl2");
+    let fl3_style = localStorage.getItem("fl3");
+    let fl4_style = localStorage.getItem("fl4");
+    let fl5_style = localStorage.getItem("fl5");
+    let fl6_style = localStorage.getItem("fl6");
+    let fl7_style = localStorage.getItem("fl7");
+
+    // 初回時の処理
     if(!localStorage.getItem(keyName)){
         //localStorageにキーと値を追加
         localStorage.setItem(keyName, keyValue);
@@ -579,7 +590,6 @@ window.onload = function(){
         display(fol7,style_name);
         localStorage.getItem("all-task");
     } 
-    console.log("a")
     // first
     add_text1 = localStorage.getItem("first-task");
     if(add_text1 == null){
@@ -589,13 +599,13 @@ window.onload = function(){
         first.innerHTML += add_text1;
     }
     // fl_check
-    display(fl1,style_name_second);
-    display(fl2,style_name_second);
-    display(fl3,style_name_second);
-    display(fl4,style_name_second);
-    display(fl5,style_name_second);
-    display(fl6,style_name_second);
-    display(fl7,style_name_second);
+    display(fl1,fl1_style);
+    display(fl2,fl2_style);
+    display(fl3,fl3_style);
+    display(fl4,fl4_style);
+    display(fl5,fl5_style);
+    display(fl6,fl6_style);
+    display(fl7,fl7_style);
 
         
     //second
