@@ -530,15 +530,12 @@ const keyValue = true;
 
 // 関数用意
 const style_name = "none";
-function display_none(a,b){
+const style_name_second = "block";
+function display(a,b){
     a.style.display = b;
 }
 
-// ２回目以降　関数
-const style_name_second = "block";
-function display_block(c,d){
-    c.style.display = d;
-}
+
 
 // window.onload
 window.onload = function(){
@@ -549,37 +546,37 @@ window.onload = function(){
         let all_body = document.getElementsByClassName("all-task");
         localStorage.setItem("all-task",all_body);
         // fl
-        display_none(fl1,style_name);
-        display_none(fl2,style_name);
-        display_none(fl3,style_name);
-        display_none(fl4,style_name);
-        display_none(fl5,style_name);
-        display_none(fl6,style_name);
-        display_none(fl7,style_name);
+        display(fl1,style_name);
+        display(fl2,style_name);
+        display(fl3,style_name);
+        display(fl4,style_name);
+        display(fl5,style_name);
+        display(fl6,style_name);
+        display(fl7,style_name);
         //sl
-        display_none(sl1,style_name);
-        display_none(sl2,style_name);
-        display_none(sl3,style_name);
-        display_none(sl4,style_name);
-        display_none(sl5,style_name);
-        display_none(sl6,style_name);
-        display_none(sl7,style_name);
+        display(sl1,style_name);
+        display(sl2,style_name);
+        display(sl3,style_name);
+        display(sl4,style_name);
+        display(sl5,style_name);
+        display(sl6,style_name);
+        display(sl7,style_name);
         // tl
-        display_none(tl1,style_name);
-        display_none(tl2,style_name);
-        display_none(tl3,style_name);
-        display_none(tl4,style_name);
-        display_none(tl5,style_name);
-        display_none(tl6,style_name);
-        display_none(tl7,style_name);
+        display(tl1,style_name);
+        display(tl2,style_name);
+        display(tl3,style_name);
+        display(tl4,style_name);
+        display(tl5,style_name);
+        display(tl6,style_name);
+        display(tl7,style_name);
         //fol
-        display_none(fol1,style_name);
-        display_none(fol2,style_name);
-        display_none(fol3,style_name);
-        display_none(fol4,style_name);
-        display_none(fol5,style_name);
-        display_none(fol6,style_name);
-        display_none(fol7,style_name);
+        display(fol1,style_name);
+        display(fol2,style_name);
+        display(fol3,style_name);
+        display(fol4,style_name);
+        display(fol5,style_name);
+        display(fol6,style_name);
+        display(fol7,style_name);
         localStorage.getItem("all-task");
     } 
     console.log("a")
@@ -592,20 +589,14 @@ window.onload = function(){
         first.innerHTML += add_text1;
     }
     // fl_check
-    fl1 = localStorage.getItem("fl1");
-    display_block(fl1,style_name_second);
+    display(fl1,style_name_second);
+    display(fl2,style_name_second);
+    display(fl3,style_name_second);
+    display(fl4,style_name_second);
+    display(fl5,style_name_second);
+    display(fl6,style_name_second);
+    display(fl7,style_name_second);
 
-    fl2.style.display = localStorage.getItem("fl2");
-    
-    fl3.style.display = localStorage.getItem("fl3");
-    
-    fl4.style.display = localStorage.getItem("fl4");
-        
-    fl5.style.display = localStorage.getItem("fl5");
-    
-    fl6.style.display = localStorage.getItem("fl6");
-        
-    fl7.style.display = localStorage.getItem("fl7");
         
     //second
     add_text2 = localStorage.getItem("second-task");
@@ -617,19 +608,14 @@ window.onload = function(){
     }
     
     // sl_check
-    sl1.style.display = localStorage.getItem("sl1");
-    
-    sl2.style.display = localStorage.getItem("sl2");
-        
-    sl3.style.display = localStorage.getItem("sl3");
-        
-    sl4.style.display = localStorage.getItem("sl4");
-        
-    sl5.style.display = localStorage.getItem("sl5");
-        
-    sl6.style.display = localStorage.getItem("sl6");
-        
-    sl7.style.display = localStorage.getItem("sl7");
+    display(sl1,style_name_second);
+    display(sl2,style_name_second);
+    display(sl3,style_name_second);
+    display(sl4,style_name_second);
+    display(sl5,style_name_second);
+    display(sl6,style_name_second);
+    display(sl7,style_name_second);
+
         
     //third
     add_text3 = localStorage.getItem("third-task");
@@ -641,19 +627,13 @@ window.onload = function(){
     }
     
     // tl_count
-    tl1.style.display = localStorage.getItem("tl1");
-    
-    tl2.style.display = localStorage.getItem("tl2");
-        
-    tl3.style.display = localStorage.getItem("tl3");
-        
-    tl4.style.display = localStorage.getItem("tl4");
-        
-    tl5.style.display = localStorage.getItem("tl5");
-        
-    tl6.style.display = localStorage.getItem("tl6");
-        
-    tl7.style.display = localStorage.getItem("tl7");
+    display(tl1,style_name_second);
+    display(tl2,style_name_second);
+    display(tl3,style_name_second);
+    display(tl4,style_name_second);
+    display(tl5,style_name_second);
+    display(tl6,style_name_second);
+    display(tl7,style_name_second);
         
     //four
     add_text4 = localStorage.getItem("fourth-task");
@@ -665,19 +645,13 @@ window.onload = function(){
     }
     
     // fol_count
-    fol1.style.display = localStorage.getItem("fol1");
-    
-    fol2.style.display = localStorage.getItem("fol2");
-        
-    fol3.style.display = localStorage.getItem("fol3");
-        
-    fol4.style.display = localStorage.getItem("fol4");
-        
-    fol5.style.display = localStorage.getItem("fol5");
-        
-    fol6.style.display = localStorage.getItem("fol6");
-        
-    fol7.style.display = localStorage.getItem("fol7");
+    display(fol1,style_name_second);
+    display(fol2,style_name_second);
+    display(fol3,style_name_second);
+    display(fol4,style_name_second);
+    display(fol5,style_name_second);
+    display(fol6,style_name_second);
+    display(fol7,style_name_second);
 
     // 週間
     // localstrage 設定
