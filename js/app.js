@@ -529,10 +529,8 @@ const keyName = 'visited';
 const keyValue = true;
 
 // 関数用意
-const style_name = "none";
-const style_name_second = "block";
 function display(a){
-    a.style.display = "block";
+    a.style.display = "none";
 }
 
 function display_second(b){
@@ -597,37 +595,37 @@ window.onload = function(){
         let all_body = document.getElementsByClassName("all-task");
         localStorage.setItem("all-task",all_body);
         // fl
-        display(fl1,style_name);
-        display(fl2,style_name);
-        display(fl3,style_name);
-        display(fl4,style_name);
-        display(fl5,style_name);
-        display(fl6,style_name);
-        display(fl7,style_name);
+        display(fl1);
+        display(fl2);
+        display(fl3);
+        display(fl4);
+        display(fl5);
+        display(fl6);
+        display(fl7);
         //sl
-        display(sl1,style_name);
-        display(sl2,style_name);
-        display(sl3,style_name);
-        display(sl4,style_name);
-        display(sl5,style_name);
-        display(sl6,style_name);
-        display(sl7,style_name);
+        display(sl1);
+        display(sl2);
+        display(sl3);
+        display(sl4);
+        display(sl5);
+        display(sl6);
+        display(sl7);
         // tl
-        display(tl1,style_name);
-        display(tl2,style_name);
-        display(tl3,style_name);
-        display(tl4,style_name);
-        display(tl5,style_name);
-        display(tl6,style_name);
-        display(tl7,style_name);
+        display(tl1);
+        display(tl2);
+        display(tl3);
+        display(tl4);
+        display(tl5);
+        display(tl6);
+        display(tl7);
         //fol
-        display(fol1,style_name);
-        display(fol2,style_name);
-        display(fol3,style_name);
-        display(fol4,style_name);
-        display(fol5,style_name);
-        display(fol6,style_name);
-        display(fol7,style_name);
+        display(fol1);
+        display(fol2);
+        display(fol3);
+        display(fol4);
+        display(fol5);
+        display(fol6);
+        display(fol7);
         localStorage.getItem("all-task");
     }
     else{  
