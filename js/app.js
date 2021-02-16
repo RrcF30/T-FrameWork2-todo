@@ -534,16 +534,13 @@ function display(a){
 }
 
 function display_second(b){
-    if(b.style.display == "none"){
-        b.style.display = "none";
-        console.log("none");
-    }
-    else if(b.style.display == "block"){
+    if(b.style.display == ""){
         b.style.display = "block";
         console.log("block");
     }
     else{
-        console.log("other");
+        b.style.display = "none";
+        console.log("none");
     }
 }
 
