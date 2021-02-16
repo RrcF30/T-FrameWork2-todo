@@ -538,7 +538,7 @@ function display_second(b){
         b.style.display = "block";
         console.log("block");
     }
-    else{
+    else if(b.style.display == "none"){
         b.style.display = "none";
         console.log("none");
     }
