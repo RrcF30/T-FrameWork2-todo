@@ -590,6 +590,7 @@ window.onload = function(){
 
     // 初回時の処理
     if(!localStorage.getItem(keyName)){
+        console.log("first");
         //localStorageにキーと値を追加
         localStorage.setItem(keyName, keyValue);
         //ここに初回アクセス時の処理
