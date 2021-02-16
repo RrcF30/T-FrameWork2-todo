@@ -563,6 +563,30 @@ window.onload = function(){
     fl6.style.display = localStorage.getItem("fl6");
     fl7.style.display = localStorage.getItem("fl7");
 
+    sl1.style.display = localStorage.getItem("sl1");
+    sl2.style.display = localStorage.getItem("sl2");
+    sl3.style.display = localStorage.getItem("sl3");
+    sl4.style.display = localStorage.getItem("sl4");
+    sl5.style.display = localStorage.getItem("sl5");
+    sl6.style.display = localStorage.getItem("sl6");
+    sl7.style.display = localStorage.getItem("sl7");
+
+    tl1.style.display = localStorage.getItem("tl1");
+    tl2.style.display = localStorage.getItem("tl2");
+    tl3.style.display = localStorage.getItem("tl3");
+    tl4.style.display = localStorage.getItem("tl4");
+    tl5.style.display = localStorage.getItem("tl5");
+    tl6.style.display = localStorage.getItem("tl6");
+    tl7.style.display = localStorage.getItem("tl7");
+
+    fol1.style.display = localStorage.getItem("fol1");
+    fol2.style.display = localStorage.getItem("fol2");
+    fol3.style.display = localStorage.getItem("fol3");
+    fol4.style.display = localStorage.getItem("fol4");
+    fol5.style.display = localStorage.getItem("fol5");
+    fol6.style.display = localStorage.getItem("fol6");
+    fol7.style.display = localStorage.getItem("fol7");
+
 
     // 初回時の処理
     if(!localStorage.getItem(keyName)){
@@ -621,6 +645,33 @@ window.onload = function(){
     display_second(fl5);
     display_second(fl6);
     display_second(fl7);
+
+    // sl_check
+    display_second(sl1);
+    display_second(sl2);
+    display_second(sl3);
+    display_second(sl4);
+    display_second(sl5);
+    display_second(sl6);
+    display_second(sl7);
+
+    //tl_check
+    display_second(tl1);
+    display_second(tl2);
+    display_second(tl3);
+    display_second(tl4);
+    display_second(tl5);
+    display_second(tl6);
+    display_second(tl7);
+
+    //fol_chek
+    display_second(fol1);
+    display_second(fol2);
+    display_second(fol3);
+    display_second(fol4);
+    display_second(fol5);
+    display_second(fol6);
+    display_second(fol7);
 
         
     //second
