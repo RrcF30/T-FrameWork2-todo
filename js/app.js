@@ -143,50 +143,22 @@ let add_btn4 = document.getElementById("b_4");
 // テキスト入力欄を非表示(first)
 in_text1.style.display = "none";
 add_btn1.style.display = "none";
-// fl(number)を非表示
-fl1.style.display = "none";
-fl2.style.display = "none";
-fl3.style.display = "none";
-fl4.style.display = "none";
-fl5.style.display = "none";
-fl6.style.display = "none";
-fl7.style.display = "none";
+
 
 // テキスト入力欄を非表示(second)
 in_text2.style.display = "none";
 add_btn2.style.display = "none";
-// sl(number) 非表示
-sl1.style.display = "none";
-sl2.style.display = "none";
-sl3.style.display = "none";
-sl4.style.display = "none";
-sl5.style.display = "none";
-sl6.style.display = "none";
-sl7.style.display = "none";
+
 
 //要素を非表示 third
 in_text3.style.display = "none";
 add_btn3.style.display = "none";
-// tl(number) 非表示
-tl1.style.display = "none";
-tl2.style.display = "none";
-tl3.style.display = "none";
-tl4.style.display = "none";
-tl5.style.display = "none";
-tl6.style.display = "none";
-tl7.style.display = "none";
 
 //要素を非表示(four)
 in_text4.style.display = "none";
 add_btn4.style.display = "none";
 // fol(number) 非表示
-fol1.style.display = "none";
-fol2.style.display = "none";
-fol3.style.display = "none";
-fol4.style.display = "none";
-fol5.style.display = "none";
-fol6.style.display = "none";
-fol7.style.display = "none";
+
 
 //         first            first               first                    first               first              first
 
@@ -623,6 +595,33 @@ window.onload = function(){
         display(fol5);
         display(fol6);
         display(fol7);
+
+        // fl(number)を非表示
+        fl1.style.display = "none";
+        fl2.style.display = "none";
+        fl3.style.display = "none";
+        fl4.style.display = "none";
+        fl5.style.display = "none";
+        fl6.style.display = "none";
+        fl7.style.display = "none";
+
+        // sl(number) 非表示
+        sl1.style.display = "none";
+        sl2.style.display = "none";
+        sl3.style.display = "none";
+        sl4.style.display = "none";
+        sl5.style.display = "none";
+        sl6.style.display = "none";
+        sl7.style.display = "none";
+
+        // fol(number)非表示
+        fol1.style.display = "none";
+        fol2.style.display = "none";
+        fol3.style.display = "none";
+        fol4.style.display = "none";
+        fol5.style.display = "none";
+        fol6.style.display = "none";
+        fol7.style.display = "none";
     }
     else{  
         // test 
@@ -653,7 +652,16 @@ window.onload = function(){
         display_second(tl5);
         display_second(tl6);
         display_second(tl7);
-        
+
+        // tl(number) 非表示
+        tl1.style.display = "none";
+        tl2.style.display = "none";
+        tl3.style.display = "none";
+        tl4.style.display = "none";
+        tl5.style.display = "none";
+        tl6.style.display = "none";
+        tl7.style.display = "none";
+                
         //fol_chek
         display_second(fol1);
         display_second(fol2);
@@ -702,14 +710,14 @@ window.onload = function(){
         }
         
     
-        // 週間
-        // localstrage 設定
-        localStorage.setItem("week_number",week_number);
-        week_number = localStorage.getItem("week_number");
-    
-        // HTMLで要素を表示
-        v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
-        week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
-        week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
     }
+    // 週間
+    // localstrage 設定
+    localStorage.setItem("week_number",week_number);
+    week_number = localStorage.getItem("week_number");
+
+    // HTMLで要素を表示
+    v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
+    week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
+    week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
 }
