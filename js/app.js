@@ -534,7 +534,7 @@ function display(a){
 }
 
 function display_second(b){
-    if(b.style.display == "block"){
+    if(b.style.display == ""){
         b.style.display = "block";
         console.log("block");
     }
@@ -623,19 +623,10 @@ window.onload = function(){
         display(fol5);
         display(fol6);
         display(fol7);
-        localStorage.getItem("all-task");
     }
     else{  
         // test 
         console.log("second");
-        // first
-        add_text1 = localStorage.getItem("first-task");
-        if(add_text1 == null){
-            first.innerHTML += "";
-        }   
-        else{
-            first.innerHTML += add_text1;
-        }
         // fl_check
         display_second(fl1);
         display_second(fl2);
@@ -644,7 +635,7 @@ window.onload = function(){
         display_second(fl5);
         display_second(fl6);
         display_second(fl7);
-    
+        
         // sl_check
         display_second(sl1);
         display_second(sl2);
@@ -653,7 +644,7 @@ window.onload = function(){
         display_second(sl5);
         display_second(sl6);
         display_second(sl7);
-    
+        
         //tl_check
         display_second(tl1);
         display_second(tl2);
@@ -662,7 +653,7 @@ window.onload = function(){
         display_second(tl5);
         display_second(tl6);
         display_second(tl7);
-    
+        
         //fol_chek
         display_second(fol1);
         display_second(fol2);
@@ -671,8 +662,16 @@ window.onload = function(){
         display_second(fol5);
         display_second(fol6);
         display_second(fol7);
-    
-            
+        
+        // first
+        add_text1 = localStorage.getItem("first-task");
+        if(add_text1 == null){
+            first.innerHTML += "";
+        }   
+        else{
+            first.innerHTML += add_text1;
+        }
+        
         //second
         add_text2 = localStorage.getItem("second-task");
         if(add_text2 == null){
