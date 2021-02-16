@@ -605,6 +605,15 @@ window.onload = function(){
         fl6.style.display = "none";
         fl7.style.display = "none";
 
+        localStorage.setItem("fl1",fl1.style.display);
+        localStorage.setItem("fl2",fl2.style.display);
+        localStorage.setItem("fl3",fl3.style.display);
+        localStorage.setItem("fl4",fl4.style.display);
+        localStorage.setItem("fl5",fl5.style.display);
+        localStorage.setItem("fl6",fl6.style.display);
+        localStorage.setItem("fl7",fl7.style.display);
+
+        
         // sl(number) 非表示
         sl1.style.display = "none";
         sl2.style.display = "none";
@@ -613,6 +622,31 @@ window.onload = function(){
         sl5.style.display = "none";
         sl6.style.display = "none";
         sl7.style.display = "none";
+        
+        localStorage.setItem("sl1",sl1.style.display);
+        localStorage.setItem("sl2",sl2.style.display);
+        localStorage.setItem("sl3",sl3.style.display);
+        localStorage.setItem("sl4",sl4.style.display);
+        localStorage.setItem("sl5",sl5.style.display);
+        localStorage.setItem("sl6",sl6.style.display);
+        localStorage.setItem("sl7",sl7.style.display);
+
+        // tl(number) 非表示
+        tl1.style.display = "none";
+        tl2.style.display = "none";
+        tl3.style.display = "none";
+        tl4.style.display = "none";
+        tl5.style.display = "none";
+        tl6.style.display = "none";
+        tl7.style.display = "none";
+        
+        localStorage.setItem("tl1",tl1.style.display);
+        localStorage.setItem("tl2",tl2.style.display);
+        localStorage.setItem("tl3",tl3.style.display);
+        localStorage.setItem("tl4",tl4.style.display);
+        localStorage.setItem("tl5",tl5.style.display);
+        localStorage.setItem("tl6",tl6.style.display);
+        localStorage.setItem("tl7",tl7.style.display);
 
         // fol(number)非表示
         fol1.style.display = "none";
@@ -622,6 +656,14 @@ window.onload = function(){
         fol5.style.display = "none";
         fol6.style.display = "none";
         fol7.style.display = "none";
+
+        localStorage.setItem("fol1",fol1.style.display);
+        localStorage.setItem("fol2",fol2.style.display);
+        localStorage.setItem("fol3",fol3.style.display);
+        localStorage.setItem("fol4",fol4.style.display);
+        localStorage.setItem("fol5",fol5.style.display);
+        localStorage.setItem("fol6",fol6.style.display);
+        localStorage.setItem("fol7",fol7.style.display);
     }
     else{  
         // test 
