@@ -695,14 +695,6 @@ window.onload = function(){
         display_second(tl6);
         display_second(tl7);
 
-        // tl(number) 非表示
-        tl1.style.display = "none";
-        tl2.style.display = "none";
-        tl3.style.display = "none";
-        tl4.style.display = "none";
-        tl5.style.display = "none";
-        tl6.style.display = "none";
-        tl7.style.display = "none";
                 
         //fol_chek
         display_second(fol1);
