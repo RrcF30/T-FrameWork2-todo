@@ -629,89 +629,93 @@ window.onload = function(){
         display(fol6,style_name);
         display(fol7,style_name);
         localStorage.getItem("all-task");
-    } 
-    // first
-    add_text1 = localStorage.getItem("first-task");
-    if(add_text1 == null){
-        first.innerHTML += "";
-    }   
-    else{
-        first.innerHTML += add_text1;
     }
-    // fl_check
-    display_second(fl1);
-    display_second(fl2);
-    display_second(fl3);
-    display_second(fl4);
-    display_second(fl5);
-    display_second(fl6);
-    display_second(fl7);
-
-    // sl_check
-    display_second(sl1);
-    display_second(sl2);
-    display_second(sl3);
-    display_second(sl4);
-    display_second(sl5);
-    display_second(sl6);
-    display_second(sl7);
-
-    //tl_check
-    display_second(tl1);
-    display_second(tl2);
-    display_second(tl3);
-    display_second(tl4);
-    display_second(tl5);
-    display_second(tl6);
-    display_second(tl7);
-
-    //fol_chek
-    display_second(fol1);
-    display_second(fol2);
-    display_second(fol3);
-    display_second(fol4);
-    display_second(fol5);
-    display_second(fol6);
-    display_second(fol7);
-
-        
-    //second
-    add_text2 = localStorage.getItem("second-task");
-    if(add_text2 == null){
-        second.innerHTML += "";
-    }
-    else{
-        second.innerHTML += add_text2;
-    }
-
-        
-    //third
-    add_text3 = localStorage.getItem("third-task");
-    if(add_text3 == null){
-        third.innerHTML += "";
-    }
-    else{
-        third.innerHTML += add_text3;
-    }
+    else{  
+        // test 
+        console.log("second");
+        // first
+        add_text1 = localStorage.getItem("first-task");
+        if(add_text1 == null){
+            first.innerHTML += "";
+        }   
+        else{
+            first.innerHTML += add_text1;
+        }
+        // fl_check
+        display_second(fl1);
+        display_second(fl2);
+        display_second(fl3);
+        display_second(fl4);
+        display_second(fl5);
+        display_second(fl6);
+        display_second(fl7);
     
-        
-    //four
-    add_text4 = localStorage.getItem("fourth-task");
-    if(add_text4 == null){
-        four.innerHTML += "";
-    }
-    else{
-        four.innerHTML += add_text4
-    }
+        // sl_check
+        display_second(sl1);
+        display_second(sl2);
+        display_second(sl3);
+        display_second(sl4);
+        display_second(sl5);
+        display_second(sl6);
+        display_second(sl7);
     
-
-    // 週間
-    // localstrage 設定
-    localStorage.setItem("week_number",week_number);
-    week_number = localStorage.getItem("week_number");
-
-    // HTMLで要素を表示
-    v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
-    week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
-    week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
+        //tl_check
+        display_second(tl1);
+        display_second(tl2);
+        display_second(tl3);
+        display_second(tl4);
+        display_second(tl5);
+        display_second(tl6);
+        display_second(tl7);
+    
+        //fol_chek
+        display_second(fol1);
+        display_second(fol2);
+        display_second(fol3);
+        display_second(fol4);
+        display_second(fol5);
+        display_second(fol6);
+        display_second(fol7);
+    
+            
+        //second
+        add_text2 = localStorage.getItem("second-task");
+        if(add_text2 == null){
+            second.innerHTML += "";
+        }
+        else{
+            second.innerHTML += add_text2;
+        }
+    
+            
+        //third
+        add_text3 = localStorage.getItem("third-task");
+        if(add_text3 == null){
+            third.innerHTML += "";
+        }
+        else{
+            third.innerHTML += add_text3;
+        }
+        
+            
+        //four
+        add_text4 = localStorage.getItem("fourth-task");
+        if(add_text4 == null){
+            four.innerHTML += "";
+        }
+        else{
+            four.innerHTML += add_text4
+        }
+        
+    
+        // 週間
+        // localstrage 設定
+        localStorage.setItem("week_number",week_number);
+        week_number = localStorage.getItem("week_number");
+    
+        // HTMLで要素を表示
+        v_date_t.innerHTML += month_text + day_text + "(" + daystr + ")";
+        week_start.innerHTML += s_week_month[week_number] + "月" + s_week_day[week_number] + "日";
+        week_end.innerHTML += e_week_month[week_number] + "月" + e_week_day[week_number] + "日";
+    }
 }
