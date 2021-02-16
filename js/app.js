@@ -682,15 +682,6 @@ window.onload = function(){
     else{
         second.innerHTML += add_text2;
     }
-    
-    // sl_check
-    display(sl1,style_name_second);
-    display(sl2,style_name_second);
-    display(sl3,style_name_second);
-    display(sl4,style_name_second);
-    display(sl5,style_name_second);
-    display(sl6,style_name_second);
-    display(sl7,style_name_second);
 
         
     //third
@@ -702,14 +693,6 @@ window.onload = function(){
         third.innerHTML += add_text3;
     }
     
-    // tl_count
-    display(tl1,style_name_second);
-    display(tl2,style_name_second);
-    display(tl3,style_name_second);
-    display(tl4,style_name_second);
-    display(tl5,style_name_second);
-    display(tl6,style_name_second);
-    display(tl7,style_name_second);
         
     //four
     add_text4 = localStorage.getItem("fourth-task");
@@ -720,14 +703,6 @@ window.onload = function(){
         four.innerHTML += add_text4
     }
     
-    // fol_count
-    display(fol1,style_name_second);
-    display(fol2,style_name_second);
-    display(fol3,style_name_second);
-    display(fol4,style_name_second);
-    display(fol5,style_name_second);
-    display(fol6,style_name_second);
-    display(fol7,style_name_second);
 
     // 週間
     // localstrage 設定
