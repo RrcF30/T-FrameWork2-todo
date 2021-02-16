@@ -534,7 +534,7 @@ function display(a){
 }
 
 function display_second(b){
-    if(b.style.display == ""){
+    if(b.style.display == "block"){
         b.style.display = "block";
         console.log("block");
     }
