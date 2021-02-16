@@ -536,11 +536,16 @@ function display(a){
 }
 
 function display_second(b){
-    if(b.style.date == "block"){
+    if(b.style.display == "none"){
+        b.style.display = "none";
+        console.log("none");
+    }
+    else if(b.style.display == "block"){
         b.style.display = "block";
+        console.log("block");
     }
     else{
-        b.style.display = "none";
+        console.log("other");
     }
 }
 
@@ -549,14 +554,15 @@ function display_second(b){
 // window.onload
 window.onload = function(){
 
-    // localstrage から取得
-    let fl1_style = localStorage.getItem("fl1");
-    let fl2_style = localStorage.getItem("fl2");
-    let fl3_style = localStorage.getItem("fl3");
-    let fl4_style = localStorage.getItem("fl4");
-    let fl5_style = localStorage.getItem("fl5");
-    let fl6_style = localStorage.getItem("fl6");
-    let fl7_style = localStorage.getItem("fl7");
+    // localstrageから取得
+    fl1.style.display = localStorage.getItem("fl1");
+    fl2.style.display = localStorage.getItem("fl2");
+    fl3.style.display = localStorage.getItem("fl3");
+    fl4.style.display = localStorage.getItem("fl4");
+    fl5.style.display = localStorage.getItem("fl5");
+    fl6.style.display = localStorage.getItem("fl6");
+    fl7.style.display = localStorage.getItem("fl7");
+
 
     // 初回時の処理
     if(!localStorage.getItem(keyName)){
@@ -608,13 +614,13 @@ window.onload = function(){
         first.innerHTML += add_text1;
     }
     // fl_check
-    display_second(fl1,fl1_style);
-    display_second(fl2,fl2_style);
-    display_second(fl3,fl3_style);
-    display_second(fl4,fl4_style);
-    display_second(fl5,fl5_style);
-    display_second(fl6,fl6_style);
-    display_second(fl7,fl7_style);
+    display_second(fl1);
+    display_second(fl2);
+    display_second(fl3);
+    display_second(fl4);
+    display_second(fl5);
+    display_second(fl6);
+    display_second(fl7);
 
         
     //second
