@@ -24,28 +24,6 @@ let e_criteria = new Date("2021/02/13 12:00:00");
 let addDate = 7;
 let fore = s_criteria.getFullYear();
 
-for (var i = 1; i <= fore; i++) {
-    // 週初め
-    s_criteria.setDate(s_criteria.getDate() + addDate);
-    s_week_month.push(s_criteria.getMonth() + 1);
-    s_week_day.push(s_criteria.getDate());
-    //　週終わり
-    e_criteria.setDate(e_criteria.getDate() + addDate);
-    e_week_month.push(e_criteria.getMonth() + 1);
-    e_week_day.push(e_criteria.getDate());
-        //　日曜日にだけ行う処理
-        if(day == 0){
-        week_number += 1;
-        }
-    }
-//日付を表示するHTMLの要素を取得
-let v_date_t = document.getElementById("viewdate_text");
-let week_start = document.getElementById("week_start");
-let from = document.getElementById("from");
-let week_end = document.getElementById("week_end");
-//HTMLに表示するテキストを作成
-let day_text = today + "日";
-let month_text = month + "月";
     
 // all get    all get       all get          all get          all get             all get               all get       all get
 
@@ -745,6 +723,30 @@ window.onload = function(){
         
     
     }
+    
+    for (var i = 1; i <= fore; i++) {
+        // 週初め
+        s_criteria.setDate(s_criteria.getDate() + addDate);
+        s_week_month.push(s_criteria.getMonth() + 1);
+        s_week_day.push(s_criteria.getDate());
+        //　週終わり
+        e_criteria.setDate(e_criteria.getDate() + addDate);
+        e_week_month.push(e_criteria.getMonth() + 1);
+        e_week_day.push(e_criteria.getDate());
+    }
+    //　日曜日にだけ行う処理
+    if(daystr == "月"){
+        week_number+=1;
+        console.log(week_number);    
+    }
+    //日付を表示するHTMLの要素を取得
+    let v_date_t = document.getElementById("viewdate_text");
+    let week_start = document.getElementById("week_start");
+    let from = document.getElementById("from");
+    let week_end = document.getElementById("week_end");
+    //HTMLに表示するテキストを作成
+    let day_text = today + "日";
+    let month_text = month + "月";
     // 週間
     // localstrage 設定
     localStorage.setItem("week_number",week_number);
